@@ -1,0 +1,1 @@
+import{d as n}from"./env.HejII1e3.js";let e=0;const t=()=>e=parseFloat(getComputedStyle(document.documentElement).fontSize)/16||1;function d(){return e||t()}function i(){return typeof window<"u"&&n()?d():1}typeof window<"u"&&window.addEventListener("resize",t,{passive:!0});export{i as d,d as u};

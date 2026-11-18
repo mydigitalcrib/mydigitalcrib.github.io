@@ -1,0 +1,438 @@
+{
+  "$ref": "#/definitions/work",
+  "definitions": {
+    "work": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "client": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "collection": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "collection"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "object",
+              "properties": {
+                "slug": {
+                  "type": "string"
+                },
+                "collection": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "slug",
+                "collection"
+              ],
+              "additionalProperties": false
+            }
+          ]
+        },
+        "summary": {
+          "type": "string"
+        },
+        "services": {
+          "type": "array",
+          "items": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "collection": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id",
+                  "collection"
+                ],
+                "additionalProperties": false
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "slug": {
+                    "type": "string"
+                  },
+                  "collection": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "slug",
+                  "collection"
+                ],
+                "additionalProperties": false
+              }
+            ]
+          },
+          "default": []
+        },
+        "industries": {
+          "type": "array",
+          "items": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "collection": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id",
+                  "collection"
+                ],
+                "additionalProperties": false
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "slug": {
+                    "type": "string"
+                  },
+                  "collection": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "slug",
+                  "collection"
+                ],
+                "additionalProperties": false
+              }
+            ]
+          },
+          "default": []
+        },
+        "tagStatus": {
+          "type": "string",
+          "enum": [
+            "proposed",
+            "approved"
+          ]
+        },
+        "markets": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "default": []
+        },
+        "year": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "default": null
+        },
+        "hero": {
+          "anyOf": [
+            {
+              "type": "object",
+              "properties": {
+                "src": {
+                  "type": "string"
+                },
+                "alt": {
+                  "type": "string",
+                  "minLength": 1,
+                  "errorMessage": {
+                    "minLength": "Alt text is required"
+                  }
+                }
+              },
+              "required": [
+                "src",
+                "alt"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "card": {
+          "$ref": "#/definitions/work/properties/hero/anyOf/0"
+        },
+        "homeTile": {
+          "anyOf": [
+            {
+              "type": "object",
+              "properties": {
+                "front": {
+                  "$ref": "#/definitions/work/properties/hero/anyOf/0"
+                },
+                "back": {
+                  "$ref": "#/definitions/work/properties/hero/anyOf/0"
+                },
+                "blurb": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "front",
+                "back",
+                "blurb"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "videos": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "src": {
+                "$ref": "#/definitions/work/properties/hero/anyOf/0/properties/src"
+              },
+              "caption": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "src"
+            ],
+            "additionalProperties": false
+          },
+          "default": []
+        },
+        "brief": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "default": null
+        },
+        "strategy": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "default": null
+        },
+        "execution": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "default": null
+        },
+        "resultsSummary": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "default": null
+        },
+        "results": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "label": {
+                "type": "string"
+              },
+              "value": {
+                "type": "string"
+              },
+              "source": {
+                "type": "string"
+              },
+              "status": {
+                "type": "string",
+                "enum": [
+                  "verified",
+                  "legacy",
+                  "unverified"
+                ]
+              }
+            },
+            "required": [
+              "label",
+              "value",
+              "source",
+              "status"
+            ],
+            "additionalProperties": false
+          },
+          "default": []
+        },
+        "creators": {
+          "type": "array",
+          "items": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "collection": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id",
+                  "collection"
+                ],
+                "additionalProperties": false
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "slug": {
+                    "type": "string"
+                  },
+                  "collection": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "slug",
+                  "collection"
+                ],
+                "additionalProperties": false
+              }
+            ]
+          },
+          "default": []
+        },
+        "quote": {
+          "anyOf": [
+            {
+              "type": "object",
+              "properties": {
+                "text": {
+                  "type": "string"
+                },
+                "status": {
+                  "$ref": "#/definitions/work/properties/results/items/properties/status"
+                }
+              },
+              "required": [
+                "text",
+                "status"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "featuredOn": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "home",
+              "social"
+            ]
+          },
+          "default": []
+        },
+        "featuredOrder": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "default": null
+        },
+        "contentStatus": {
+          "type": "string",
+          "enum": [
+            "complete",
+            "needs-rewrite",
+            "needs-input"
+          ]
+        },
+        "order": {
+          "type": "number"
+        },
+        "visible": {
+          "type": "boolean",
+          "default": true
+        },
+        "seo": {
+          "type": "object",
+          "properties": {
+            "title": {
+              "type": "string"
+            },
+            "description": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "title",
+            "description"
+          ],
+          "additionalProperties": false
+        },
+        "locale": {
+          "type": "string",
+          "default": "en"
+        },
+        "$schema": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "title",
+        "client",
+        "summary",
+        "tagStatus",
+        "hero",
+        "card",
+        "contentStatus",
+        "order"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

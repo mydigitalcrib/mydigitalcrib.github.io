@@ -1,0 +1,404 @@
+{
+  "$ref": "#/definitions/roster",
+  "definitions": {
+    "roster": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "portrait": {
+          "anyOf": [
+            {
+              "type": "object",
+              "properties": {
+                "src": {
+                  "type": "string"
+                },
+                "alt": {
+                  "type": "string",
+                  "minLength": 1,
+                  "errorMessage": {
+                    "minLength": "Alt text is required"
+                  }
+                }
+              },
+              "required": [
+                "src",
+                "alt"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "mainCategory": {
+          "anyOf": [
+            {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "collection": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "collection"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "slug": {
+                      "type": "string"
+                    },
+                    "collection": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "slug",
+                    "collection"
+                  ],
+                  "additionalProperties": false
+                }
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "categories": {
+          "type": "array",
+          "items": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "collection": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id",
+                  "collection"
+                ],
+                "additionalProperties": false
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "slug": {
+                    "type": "string"
+                  },
+                  "collection": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "slug",
+                  "collection"
+                ],
+                "additionalProperties": false
+              }
+            ]
+          },
+          "default": []
+        },
+        "categoryStatus": {
+          "type": "string",
+          "enum": [
+            "proposed",
+            "approved"
+          ]
+        },
+        "legacyCategory": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "divisions": {
+          "type": "array",
+          "items": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "collection": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id",
+                  "collection"
+                ],
+                "additionalProperties": false
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "slug": {
+                    "type": "string"
+                  },
+                  "collection": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "slug",
+                  "collection"
+                ],
+                "additionalProperties": false
+              }
+            ]
+          },
+          "default": []
+        },
+        "country": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 2,
+              "maxLength": 2
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "platforms": {
+          "type": "object",
+          "properties": {
+            "tiktok": {
+              "type": "string",
+              "format": "uri"
+            },
+            "instagram": {
+              "type": "string",
+              "format": "uri"
+            },
+            "youtube": {
+              "type": "string",
+              "format": "uri"
+            },
+            "twitch": {
+              "type": "string",
+              "format": "uri"
+            },
+            "podcast": {
+              "type": "string",
+              "format": "uri"
+            },
+            "x": {
+              "type": "string",
+              "format": "uri"
+            },
+            "website": {
+              "type": "string",
+              "format": "uri"
+            }
+          },
+          "additionalProperties": false,
+          "default": {}
+        },
+        "niche": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "default": null
+        },
+        "handle": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "default": null
+        },
+        "relationship": {
+          "type": "string",
+          "enum": [
+            "managed",
+            "partner",
+            "unconfirmed"
+          ]
+        },
+        "audience": {
+          "anyOf": [
+            {
+              "type": "object",
+              "properties": {
+                "figure": {
+                  "type": "string"
+                },
+                "platform": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "source": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string",
+                  "enum": [
+                    "verified",
+                    "legacy",
+                    "unverified"
+                  ]
+                }
+              },
+              "required": [
+                "figure",
+                "platform",
+                "source",
+                "status"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "videos": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "src": {
+                "$ref": "#/definitions/roster/properties/portrait/anyOf/0/properties/src"
+              },
+              "poster": {
+                "$ref": "#/definitions/roster/properties/portrait/anyOf/0/properties/src"
+              },
+              "caption": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "src"
+            ],
+            "additionalProperties": false
+          },
+          "maxItems": 2,
+          "default": []
+        },
+        "featured": {
+          "type": "boolean",
+          "default": false
+        },
+        "order": {
+          "type": "number"
+        },
+        "visible": {
+          "type": "boolean",
+          "default": true
+        },
+        "consent": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "type": "string",
+              "enum": [
+                "confirmed",
+                "legacy",
+                "listed",
+                "none"
+              ]
+            },
+            "confirmedBy": {
+              "type": "string"
+            },
+            "date": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "date-time"
+                },
+                {
+                  "type": "string",
+                  "format": "date"
+                },
+                {
+                  "type": "integer",
+                  "format": "unix-time"
+                }
+              ]
+            }
+          },
+          "required": [
+            "status"
+          ],
+          "additionalProperties": false
+        },
+        "seo": {
+          "type": "object",
+          "properties": {
+            "title": {
+              "type": "string"
+            },
+            "description": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "title",
+            "description"
+          ],
+          "additionalProperties": false
+        },
+        "locale": {
+          "type": "string",
+          "default": "en"
+        },
+        "$schema": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "portrait",
+        "mainCategory",
+        "categoryStatus",
+        "legacyCategory",
+        "country",
+        "relationship",
+        "audience",
+        "order",
+        "consent"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

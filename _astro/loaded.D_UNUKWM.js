@@ -1,0 +1,1 @@
+const n=()=>document.documentElement.classList.contains("is-loading");function o(e){if(!n())return e();window.addEventListener("stride:loaded",()=>e(),{once:!0})}const d=()=>new Promise(e=>o(e));export{d as l,o as w};

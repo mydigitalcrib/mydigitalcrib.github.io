@@ -1,0 +1,101 @@
+{
+  "$ref": "#/definitions/sponsorships",
+  "definitions": {
+    "sponsorships": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "partner": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "creator",
+            "sports-team",
+            "event",
+            "community"
+          ]
+        },
+        "year": {
+          "type": "number"
+        },
+        "month": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 12
+        },
+        "location": {
+          "type": "string"
+        },
+        "images": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "src": {
+                "type": "string"
+              },
+              "alt": {
+                "type": "string",
+                "minLength": 1,
+                "errorMessage": {
+                  "minLength": "Alt text is required"
+                }
+              }
+            },
+            "required": [
+              "src",
+              "alt"
+            ],
+            "additionalProperties": false
+          },
+          "minItems": 1
+        },
+        "summary": {
+          "type": "string"
+        },
+        "link": {
+          "type": "string",
+          "format": "uri"
+        },
+        "featured": {
+          "type": "boolean",
+          "default": false
+        },
+        "approval": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "type": "string",
+              "enum": [
+                "confirmed",
+                "none"
+              ]
+            }
+          },
+          "required": [
+            "status"
+          ],
+          "additionalProperties": false
+        },
+        "$schema": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "title",
+        "partner",
+        "type",
+        "year",
+        "images",
+        "summary",
+        "approval"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

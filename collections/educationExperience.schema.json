@@ -1,0 +1,55 @@
+{
+  "$ref": "#/definitions/educationExperience",
+  "definitions": {
+    "educationExperience": {
+      "type": "object",
+      "properties": {
+        "$schema": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "summary": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "default": null
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "available",
+              "planned",
+              "unconfirmed"
+            ]
+          },
+          "copyStatus": {
+            "type": "string",
+            "enum": [
+              "approved",
+              "draft",
+              "needed"
+            ],
+            "default": "needed"
+          },
+          "order": {
+            "type": "number"
+          }
+        },
+        "required": [
+          "title",
+          "status",
+          "order"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

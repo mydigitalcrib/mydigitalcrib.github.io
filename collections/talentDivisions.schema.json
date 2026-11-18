@@ -1,0 +1,80 @@
+{
+  "$ref": "#/definitions/talentDivisions",
+  "definitions": {
+    "talentDivisions": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "active",
+            "coming-soon"
+          ]
+        },
+        "tagline": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "default": null
+        },
+        "hero": {
+          "type": "object",
+          "properties": {
+            "src": {
+              "type": "string"
+            },
+            "alt": {
+              "type": "string",
+              "minLength": 1,
+              "errorMessage": {
+                "minLength": "Alt text is required"
+              }
+            }
+          },
+          "required": [
+            "src",
+            "alt"
+          ],
+          "additionalProperties": false
+        },
+        "order": {
+          "type": "number"
+        },
+        "picker": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "default": null
+        },
+        "phoneMenu": {
+          "type": "boolean",
+          "default": true
+        },
+        "copyStatus": {
+          "type": "string",
+          "enum": [
+            "approved",
+            "draft",
+            "needed"
+          ],
+          "default": "needed"
+        },
+        "$schema": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "status",
+        "order"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

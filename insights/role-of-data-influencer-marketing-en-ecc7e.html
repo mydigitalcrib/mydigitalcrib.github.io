@@ -1,0 +1,630 @@
+<!DOCTYPE html><html lang="en" data-division="group" data-area="0" data-look="deep" data-ink="dark" class="has-backdrop" data-astro-cid-gjphf53z> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><script>
+      document.documentElement.classList.add('js');
+      // Safety net: if the motion scripts never start, show everything rather than hidden content.
+      setTimeout(() => {
+        const root = document.documentElement;
+        if (!root.classList.contains('motion-ready')) root.classList.remove('js');
+      }, 3000);
+    </script><title>Role of Data in Influencer Marketing ROI</title><meta name="description" content="Role of data in influencer marketing: discover data types, campaign optimisation, performance measurement, and risk management for higher ROI."><link rel="canonical" href="https://www.stride-social.com/insights/role-of-data-influencer-marketing-en-ecc7e"><meta name="robots" content="noindex"><meta property="og:site_name" content="Stride"><meta property="og:type" content="article"><meta property="og:url" content="https://www.stride-social.com/insights/role-of-data-influencer-marketing-en-ecc7e"><meta property="og:title" content="Role of Data in Influencer Marketing ROI"><meta property="og:description" content="Role of data in influencer marketing: discover data types, campaign optimisation, performance measurement, and risk management for higher ROI."><meta property="og:image" content="https://www.stride-social.com/assets/insights/role-of-data-influencer-marketing-en-ecc7e.jpg"><meta property="og:locale" content="en_GB"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Role of Data in Influencer Marketing ROI"><meta name="twitter:description" content="Role of data in influencer marketing: discover data types, campaign optimisation, performance measurement, and risk management for higher ROI."><meta name="twitter:image" content="https://www.stride-social.com/assets/insights/role-of-data-influencer-marketing-en-ecc7e.jpg"><script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Role of Data in Influencer Marketing ROI","description":"Role of data in influencer marketing: discover data types, campaign optimisation, performance measurement, and risk management for higher ROI.","image":"https://www.stride-social.com/assets/insights/role-of-data-influencer-marketing-en-ecc7e.jpg","datePublished":"2026-02-24","author":{"@type":"Person","name":"Alex Hendy"},"publisher":{"@type":"Organization","name":"Stride Social","url":"https://www.stride-social.com"}}</script><link rel="icon" href="/assets/site/b5e9e5f9-group-15066.png" type="image/png"><link rel="apple-touch-icon" href="/assets/site/223c1594-stride-social.jpg"><script>
+      // A link to a single case study opens it over Our Work instead (the case pages are out of date, the owner,
+      // 2026-11-13; work-canvas.ts reads the address), on every screen since Our Work's canvas came to phones.
+      document.addEventListener('click', function (e) {
+        if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+        var a = e.target && e.target.closest ? e.target.closest('a[href^="/work/"]') : null;
+        var m = a && a.getAttribute('href').match(/^\/work\/([^/?#]+)\/?$/);
+        if (!m) return;
+        e.preventDefault();
+        location.assign('/work#' + m[1]);
+      });
+    </script><script>
+      // Desktop: the header and the dial have layers of their own while the page changes (motion.css), named only
+      // for the change, since a named element's glass can't blur what's behind it. The dial's turn starts with the
+      // change (edge-nav.ts reads window.strideReveal).
+      (function () {
+        var desk = matchMedia('(min-width: 1024px)');
+        var name = function (on) {
+          var chrome = document.querySelector('[data-chrome]');
+          var dial = document.querySelector('[data-radial]');
+          if (chrome) chrome.style.viewTransitionName = on ? 'site-chrome' : '';
+          if (dial) dial.style.viewTransitionName = on ? 'site-nav' : '';
+        };
+        addEventListener('pageswap', function (e) {
+          if (e.viewTransition && desk.matches) name(true);
+        });
+        addEventListener('pageshow', function (e) {
+          if (e.persisted) name(false);
+        });
+        addEventListener('pagereveal', function (e) {
+          var vt = e.viewTransition;
+          window.strideReveal = vt || null;
+          if (!vt) return;
+          if (desk.matches) {
+            name(true);
+            vt.finished.then(function () { name(false); }, function () { name(false); });
+          }
+          if (!vt.types) return;
+          // The page follows the dial (desktop): to an area further down it, the page rises from below;
+          // further up, it comes down from above. The last page left where it was (edge-nav.ts).
+          if (!desk.matches) return;
+          try {
+            var rec = JSON.parse(sessionStorage.getItem('stride:dial') || 'null');
+            var area = Number(document.documentElement.dataset.area);
+            if (rec && Date.now() - rec.t < 2000 && typeof rec.area === 'number' && rec.area !== area) vt.types.add(area > rec.area ? 'dial-down' : 'dial-up');
+          } catch (_) {}
+        });
+      })();
+    </script><link rel="stylesheet" href="/_astro/_planned_.vUGVah22.css">
+<style>.crumbs[data-astro-cid-imd2pdfx]{min-width:0;max-width:100%}.crumbs[data-astro-cid-imd2pdfx] ol[data-astro-cid-imd2pdfx]{display:flex;flex-wrap:nowrap;gap:var(--space-2);min-width:0;white-space:nowrap;font-family:var(--font-mono);font-size:var(--type-label);letter-spacing:.04em;text-transform:uppercase}.crumbs[data-astro-cid-imd2pdfx] li[data-astro-cid-imd2pdfx]{flex:none}.crumbs[data-astro-cid-imd2pdfx] li[data-astro-cid-imd2pdfx]:last-child{flex:0 1 auto;min-width:0;overflow:hidden;text-overflow:ellipsis}.crumbs[data-astro-cid-imd2pdfx] li[data-astro-cid-imd2pdfx]+li[data-astro-cid-imd2pdfx]:before{content:"/";margin-right:var(--space-2);opacity:.5}.crumbs--on-light[data-astro-cid-imd2pdfx]{color:var(--slate)}.crumbs--on-dark[data-astro-cid-imd2pdfx]{color:rgb(var(--ink) / .7)}.crumbs[data-astro-cid-imd2pdfx] a[data-astro-cid-imd2pdfx]:hover{text-decoration:underline;text-underline-offset:3px}@media(min-width:1024px){.crumbs[data-astro-cid-imd2pdfx] a[data-astro-cid-imd2pdfx]{padding-bottom:.1875rem;background:linear-gradient(currentColor,currentColor) 100% 100% / 0% 1px no-repeat;transition:background-size .36s var(--ease-out)}.crumbs[data-astro-cid-imd2pdfx] a[data-astro-cid-imd2pdfx]:is(:hover,:focus-visible){background-position:0 100%;background-size:100% 1px;text-decoration:none}}
+.prose[data-astro-cid-jqgqbfy7]{max-width:68ch;font-size:1.125rem;line-height:1.65;color:var(--navy-900);overflow-wrap:break-word}.prose[data-astro-cid-jqgqbfy7]>*+*{margin-top:1.1em}.prose[data-astro-cid-jqgqbfy7] h2,.prose[data-astro-cid-jqgqbfy7] h3,.prose[data-astro-cid-jqgqbfy7] h4{margin-top:2em;font-family:var(--font-display);font-weight:800;font-stretch:106%;line-height:1.12;letter-spacing:-.01em}.prose[data-astro-cid-jqgqbfy7] h2{font-size:clamp(1.625rem,2.6vw,2.25rem)}.prose[data-astro-cid-jqgqbfy7] h3{font-size:clamp(1.375rem,2vw,1.75rem)}.prose[data-astro-cid-jqgqbfy7] h4{font-size:1.25rem}.prose[data-astro-cid-jqgqbfy7] a{text-decoration:underline;text-decoration-color:var(--accent-ink);text-underline-offset:3px}.prose[data-astro-cid-jqgqbfy7] strong{font-weight:650}.prose[data-astro-cid-jqgqbfy7] ul,.prose[data-astro-cid-jqgqbfy7] ol{padding-left:1.3em}.prose[data-astro-cid-jqgqbfy7] ul{list-style:disc}.prose[data-astro-cid-jqgqbfy7] ol{list-style:decimal}.prose[data-astro-cid-jqgqbfy7] li+li{margin-top:.4em}.prose[data-astro-cid-jqgqbfy7] blockquote{margin-inline:0;padding-left:var(--space-5);border-left:3px solid var(--accent);font-family:var(--font-serif);font-size:1.5rem;font-style:italic;line-height:1.3}.prose[data-astro-cid-jqgqbfy7] img{width:100%;height:auto}.prose[data-astro-cid-jqgqbfy7] figure{margin:2em 0}.prose[data-astro-cid-jqgqbfy7] table{display:block;width:100%;overflow-x:auto;border-collapse:collapse;font-size:.9375rem;line-height:1.45}.prose[data-astro-cid-jqgqbfy7] th,.prose[data-astro-cid-jqgqbfy7] td{min-width:140px;padding:var(--space-3);border-bottom:1px solid var(--line);text-align:left;vertical-align:top}.prose[data-astro-cid-jqgqbfy7] th{font-weight:650;background:var(--paper)}.prose[data-astro-cid-jqgqbfy7] p:empty{display:none}@media(min-width:1024px){.prose[data-astro-cid-jqgqbfy7] a{text-underline-offset:.1875rem}.prose[data-astro-cid-jqgqbfy7] th,.prose[data-astro-cid-jqgqbfy7] td{min-width:8.75rem}.prose[data-astro-cid-jqgqbfy7] blockquote{border-left-width:.1875rem}}
+</style>
+<link rel="stylesheet" href="/_astro/_slug_.wan4HITV.css">
+<link rel="stylesheet" href="/_astro/_slug_.CW46BApb.css">
+<link rel="stylesheet" href="/_astro/_slug_.BAndlqQN.css"></head> <body data-astro-cid-gjphf53z>  <div class="loader" aria-hidden="true" data-loader data-astro-cid-4t6vrqh4> <div class="loader__inner" data-astro-cid-4t6vrqh4> <svg class="loader__mark" viewBox="0 0 106 106" data-astro-cid-4t6vrqh4> <path class="loader__t loader__t--1" d="M53 53H0L53 0v53Z" data-astro-cid-4t6vrqh4></path> <path class="loader__t loader__t--2" d="M106 53H53l53-53v53Z" data-astro-cid-4t6vrqh4></path> <path class="loader__t loader__t--3" d="M53 106H0l53-53v53Z" data-astro-cid-4t6vrqh4></path> <path class="loader__t loader__t--4" d="M106 106H53l53-53v53Z" data-astro-cid-4t6vrqh4></path> </svg> <p class="loader__pct" data-astro-cid-4t6vrqh4><span data-loader-pct data-astro-cid-4t6vrqh4>0</span><i data-astro-cid-4t6vrqh4>%</i></p> </div> </div> <script>
+  (function () {
+    var root = document.documentElement;
+    var el = document.querySelector('[data-loader]');
+    if (!el) return;
+    // The homepage's intro is its own loading screen (the owner, 2026-11-13): when it's about to play, this steps
+    // aside. On phones and tablets it plays whenever motion is allowed; on desktop on the first visit of a session, or
+    // on a reload (home/CoverHero.astro), unless sent to the three sides.
+    if (location.pathname.replace(/\/index\.html$/, '/') === '/') {
+      var intro = false;
+      if (!matchMedia('(min-width: 1024px)').matches) intro = !matchMedia('(prefers-reduced-motion: reduce)').matches;
+      else if (location.hash !== '#stride-group') {
+        try {
+          var nav = performance.getEntriesByType('navigation')[0];
+          intro = sessionStorage.getItem('stride:intro') !== 'seen' || !!(nav && nav.type === 'reload');
+        } catch (e) {
+          intro = true;
+        }
+      }
+      if (intro) {
+        el.parentNode.removeChild(el);
+        return;
+      }
+    }
+    root.classList.add('is-loading');
+
+    var MIN = 900; // shown at least this long: the mark builds
+    var CAP = 12000; // never longer than this (a page with a wall of photographs on a slow connection needs it)
+    var MAX_MEDIA = 48; // pictures and videos on the first screen it waits for, at most
+    var start = performance.now();
+    var calm = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var pct = el.querySelector('[data-loader-pct]');
+    var waits = []; // each returns true once its thing has arrived
+    var tracked = [];
+    var domReady = false;
+    var pageLoaded = false;
+    var loadedAt = 0;
+    var fontsIn = false;
+    var over = false;
+    var shown = 0;
+    var raf = 0;
+    waits.push(function () { return domReady; });
+    waits.push(function () { return pageLoaded; });
+    waits.push(function () { return fontsIn; });
+
+    // Scrolling waits with the entrances: nothing moves under the screen while it's up.
+    var KEYS = { ' ': 1, PageDown: 1, PageUp: 1, ArrowDown: 1, ArrowUp: 1, Home: 1, End: 1 };
+    var block = function (e) {
+      if (e.type === 'keydown' && !KEYS[e.key]) return;
+      e.preventDefault();
+      e.stopImmediatePropagation();
+    };
+    ['wheel', 'touchmove', 'keydown'].forEach(function (t) { addEventListener(t, block, { capture: true, passive: false }); });
+
+    // On the first screen as it's drawn now, or where it will stand once its entrance has played (the entrances are
+    // held while this is up, some starting off the screen): its place in the layout, before any transform.
+    var onScreen = function (m) {
+      var r = m.getBoundingClientRect();
+      if (r.width > 0 && r.height > 0 && r.bottom > 0 && r.top < innerHeight && r.right > 0 && r.left < innerWidth) return true;
+      var w = m.offsetWidth;
+      var h = m.offsetHeight;
+      if (!w || !h) return false;
+      var x = 0;
+      var y = -scrollY;
+      for (var n = m; n; n = n.offsetParent) {
+        x += n.offsetLeft;
+        y += n.offsetTop;
+      }
+      return y + h > 0 && y < innerHeight && x + w > 0 && x < innerWidth;
+    };
+    // The first screen's pictures and videos (looked for again as the page loads, for any its scripts add or move in).
+    var scan = function () {
+      document.querySelectorAll('img, video').forEach(function (m) {
+        if (tracked.length >= MAX_MEDIA || tracked.indexOf(m) > -1 || m.closest('[data-loader]') || !onScreen(m)) return;
+        tracked.push(m);
+        if (m.tagName === 'IMG') {
+          // In once it has loaded and been decoded (so it appears whole). One that failed isn't waited for; one with no
+          // picture asked for yet (a script gives it one) is, while the list is open.
+          var ok = false;
+          var decoding = false;
+          waits.push(function () {
+            if (ok) return true;
+            var asked = !!(m.currentSrc || m.getAttribute('src'));
+            if (m.complete && m.naturalWidth > 0) {
+              if (!decoding) {
+                decoding = true;
+                var settle = function () { ok = true; };
+                (m.decode ? m.decode() : Promise.resolve()).then(settle, settle);
+              }
+              return false;
+            }
+            if (m.complete && asked) return true;
+            if (!asked) return pageLoaded && performance.now() - loadedAt > 1200;
+            return false;
+          });
+          return;
+        }
+        var poster = m.getAttribute('poster');
+        if (poster) {
+          var posterIn = false;
+          var p = new Image();
+          p.onload = p.onerror = function () { posterIn = true; };
+          p.src = poster;
+          waits.push(function () { return posterIn; });
+        }
+        // Its first frame, when it's going to play: one still fetching once the page (and its scripts) have loaded.
+        waits.push(function () {
+          if (m.readyState >= 2 || m.error) return true;
+          return pageLoaded && performance.now() - loadedAt > 300 && m.networkState !== 2;
+        });
+      });
+    };
+
+    var drop = function () {
+      if (el.parentNode) el.parentNode.removeChild(el);
+    };
+    var end = function () {
+      if (over) return;
+      over = true;
+      cancelAnimationFrame(raf);
+      if (pct) pct.textContent = '100';
+      // It opens: the page's entrances start as it fades (loaded.ts), and scrolling is free.
+      ['wheel', 'touchmove', 'keydown'].forEach(function (t) { removeEventListener(t, block, { capture: true }); });
+      el.classList.add('is-done');
+      root.classList.remove('is-loading');
+      window.strideLoaded = true;
+      dispatchEvent(new Event('stride:loaded'));
+      setTimeout(drop, calm ? 220 : 560);
+    };
+    var frame = 0;
+    var tick = function () {
+      var t = performance.now() - start;
+      // Pictures the page's scripts lay out on the first screen after it has loaded (a fanned hand of cards) are
+      // looked for too, for a moment; then the list is settled, so something moving on its own can't hold it forever.
+      if (domReady && frame++ % 15 === 0 && !(pageLoaded && performance.now() - loadedAt > 1200)) scan();
+      var done = 0;
+      for (var i = 0; i < waits.length; i++) if (waits[i]()) done++;
+      var all = done === waits.length;
+      // What has arrived, and a slow creep with the time so it never seems stuck.
+      // Never back down, even when the page's scripts add a picture to wait for.
+      var target = all ? 1 : Math.max(shown, Math.min(0.96, Math.max(done / waits.length, Math.min(0.9, t / CAP))));
+      shown += (target - shown) * (all ? 0.22 : 0.1);
+      if (all && 1 - shown < 0.01) shown = 1;
+      if (pct) pct.textContent = String(Math.floor(shown * 100));
+      if ((shown >= 1 && t >= MIN) || t >= CAP) return end();
+      raf = requestAnimationFrame(tick);
+    };
+    raf = requestAnimationFrame(tick);
+    // If frames stop (a tab in the background), the cap still holds once it's back; and if the script above ever
+    // stalled, the CSS takes it away by itself.
+    setTimeout(function () { if (!over) end(); }, CAP + 400);
+
+    // Arriving through a page transition: the loading screen is the arrival, so the transition is skipped, and the
+    // page plays its entrances as if it had just opened.
+    addEventListener('pagereveal', function (e) {
+      if (!e.viewTransition || over) return;
+      // A skipped transition rejects its promises; they're answered here so nothing reports an error.
+      e.viewTransition.ready.catch(function () {});
+      e.viewTransition.finished.catch(function () {});
+      e.viewTransition.skipTransition();
+    });
+
+    var dom = function () {
+      domReady = true;
+      scan();
+      // The fonts the page has asked for by now.
+      if (document.fonts && document.fonts.ready) document.fonts.ready.then(function () { fontsIn = true; }, function () { fontsIn = true; });
+      else fontsIn = true;
+    };
+    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', dom, { once: true });
+    else dom();
+    var onLoad = function () {
+      pageLoaded = true;
+      loadedAt = performance.now();
+      scan();
+    };
+    if (document.readyState === 'complete') onLoad();
+    else addEventListener('load', onLoad, { once: true });
+  })();
+</script>   <div class="cursor-glass" aria-hidden="true" data-cursor-glass> <div class="cursor-glass__shape cursor-glass__shape--arrow"> <span class="cursor-glass__pane" style="clip-path: path('M3.4 2.8 25.3 11.5c1.7.7 1.6 3.1-.2 3.5l-8.5 2.2c-.6.2-1 .6-1.2 1.2l-2.2 8.5c-.4 1.8-2.8 1.9-3.5.2L2.8 3.4c-.2-.5.1-.8.6-.6Z')"></span> <svg viewBox="0 0 32 32" width="32" height="32"> <path class="cursor-glass__edge" d="M3.4 2.8 25.3 11.5c1.7.7 1.6 3.1-.2 3.5l-8.5 2.2c-.6.2-1 .6-1.2 1.2l-2.2 8.5c-.4 1.8-2.8 1.9-3.5.2L2.8 3.4c-.2-.5.1-.8.6-.6Z"></path> <path class="cursor-glass__shine" d="M6.200 6.200 18.500 11"></path> </svg> </div> <div class="cursor-glass__shape cursor-glass__shape--hand"> <span class="cursor-glass__pane" style="clip-path: path('M13.2 2.5c1.4 0 2.5 1.100 2.5 2.500v7.600c.4-.6 1.100-1 1.900-1 1 0 1.900.6 2.200 1.500.4-.4 1-.7 1.700-.7 1.100 0 2 .7 2.300 1.700.3-.2.7-.3 1.100-.3 1.300 0 2.300 1 2.300 2.300v5.400c0 4.600-3.300 7.900-7.900 7.900H17c-2.600 0-4.600-1-6.200-3l-5.600-6.900c-.8-1-.7-2.400.3-3.200 1-.8 2.300-.7 3.200.2l2 2.100V5c0-1.400 1.100-2.500 2.500-2.500Z')"></span> <svg viewBox="0 0 32 32" width="32" height="32"> <path class="cursor-glass__edge" d="M13.2 2.5c1.4 0 2.5 1.100 2.5 2.500v7.600c.4-.6 1.100-1 1.900-1 1 0 1.900.6 2.200 1.500.4-.4 1-.7 1.700-.7 1.100 0 2 .7 2.300 1.700.3-.2.7-.3 1.100-.3 1.300 0 2.300 1 2.300 2.300v5.400c0 4.600-3.300 7.900-7.900 7.900H17c-2.600 0-4.600-1-6.200-3l-5.600-6.900c-.8-1-.7-2.400.3-3.200 1-.8 2.300-.7 3.200.2l2 2.100V5c0-1.400 1.100-2.500 2.500-2.500Z"></path> <path class="cursor-glass__shine" d="M13.200 5v6M15.700 13v3.200M19.800 13.400v2.800M23.800 14.400v2.400"></path> </svg> </div> </div>  <script>
+  // Inline, so it runs as the page is first drawn rather than once its bundles have loaded: the old navy arrow used to
+  // show through each page's loading screen until the glass took over (the owner, 2026-11-18: "the old cursor is
+  // showing up"). And it carries over from page to page: where the pointer was as the last page went (a link followed,
+  // a reload), the glass is there at once, so the old arrow never shows in between; moving the mouse takes it from there.
+  // It takes over at the first move of a real mouse, and steps aside for text fields and anything with its own cursor.
+  (() => {
+    const glass = document.querySelector('[data-cursor-glass]');
+    if (!glass || glass.dataset.ready) return;
+    glass.dataset.ready = 'true';
+    const root = document.documentElement;
+    const here = window.matchMedia('(hover: hover) and (pointer: fine) and (min-width: 1024px)');
+    const FIELD = "input:not([type='checkbox'], [type='radio'], [type='range']), textarea, select, [contenteditable='true'], [data-own-cursor]";
+    const PRESS = "a[href], button, label, summary, [role='button'], [role='tab'], [role='slider'], [data-grow-card], [data-press]";
+    // What can be taken hold of and dragged: the dial (between its labels), a plain deck's row that slides (more than
+    // four cards), anything marked so. The deck's row needs :has(), which an older browser would throw on in closest().
+    const ROW = CSS.supports('selector(:has(a))') ? ', .deck:not(.deck--made) .deck__panel:has(li:nth-child(5)) .deck__cards' : '';
+    const GRAB = '.radial__grab, [data-grab]' + ROW;
+    const KEY = 'stride:pointer';
+    // Its size follows the screen's, as the page's does (the desktop's scale: the root size over 16, scripts/system/scale.ts).
+    const fit = () => glass.style.setProperty('--k', String(parseFloat(getComputedStyle(root).fontSize) / 16 || 1));
+    fit();
+    window.addEventListener('resize', fit, { passive: true });
+    let x = -1;
+    let y = -1;
+    let held = false; // pressed on something that drags, until let go
+    const place = () => {
+      glass.style.transform = 'translate(' + (x - 3) + 'px, ' + (y - 3) + 'px)';
+    };
+    const read = (over) => {
+      glass.classList.toggle('is-on', !!over && !over.closest(FIELD));
+      glass.classList.toggle('is-press', !!(over && over.closest(PRESS)));
+      const grabbing = held || root.classList.contains('is-radial-dragging');
+      glass.classList.toggle('is-grab', grabbing || !!(over && over.closest(GRAB)));
+      glass.classList.toggle('is-grabbing', grabbing);
+    };
+
+    // Where the last page left the pointer, if that was a moment ago and it's on this screen: the glass there now.
+    try {
+      const last = JSON.parse(sessionStorage.getItem(KEY) || 'null');
+      if (last && here.matches && Date.now() - last.t < 15000 && last.x >= 0 && last.y >= 0 && last.x < innerWidth && last.y < innerHeight) {
+        x = last.x;
+        y = last.y;
+        root.classList.add('has-glass-cursor');
+        place();
+        glass.classList.add('is-on');
+        const look = () => x >= 0 && read(document.elementFromPoint(x, y));
+        if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', look, { once: true });
+        else look();
+      }
+    } catch (e) {
+      /* no storage: the old arrow until the mouse moves */
+    }
+    window.addEventListener('pagehide', () => {
+      try {
+        if (x >= 0 && root.classList.contains('has-glass-cursor')) sessionStorage.setItem(KEY, JSON.stringify({ x: x, y: y, t: Date.now() }));
+        else sessionStorage.removeItem(KEY);
+      } catch (e) {
+        /* no storage */
+      }
+    });
+
+    window.addEventListener(
+      'pointermove',
+      (e) => {
+        if (e.pointerType !== 'mouse' || !here.matches) {
+          root.classList.remove('has-glass-cursor');
+          return;
+        }
+        root.classList.add('has-glass-cursor');
+        x = e.clientX;
+        y = e.clientY;
+        place();
+        read(e.target instanceof Element ? e.target : null);
+      },
+      { passive: true },
+    );
+    window.addEventListener(
+      'pointerdown',
+      (e) => {
+        glass.classList.add('is-down');
+        held = e.target instanceof Element && !!e.target.closest(GRAB);
+        if (held) read(e.target);
+      },
+      { passive: true },
+    );
+    window.addEventListener(
+      'pointerup',
+      (e) => {
+        glass.classList.remove('is-down');
+        if (!held) return;
+        held = false;
+        read(e.target instanceof Element ? e.target : null);
+      },
+      { passive: true },
+    );
+    // The page scrolled under a still pointer: what's under it now (once a frame at most).
+    let queued = false;
+    window.addEventListener(
+      'scroll',
+      () => {
+        if (queued || x < 0 || !root.classList.contains('has-glass-cursor')) return;
+        queued = true;
+        requestAnimationFrame(() => {
+          queued = false;
+          read(document.elementFromPoint(x, y));
+        });
+      },
+      { passive: true },
+    );
+    // Off the page, or onto an embedded player that draws its own cursor (the parent hears nothing more until the
+    // pointer comes back), it goes, and a scroll meanwhile doesn't bring it back where the pointer last was; the next
+    // move on the page does.
+    const away = () => {
+      x = -1;
+      glass.classList.remove('is-on');
+    };
+    root.addEventListener('pointerleave', away);
+    document.addEventListener(
+      'pointerout',
+      (e) => {
+        const to = e.relatedTarget;
+        if (!to || (to instanceof Element && to.tagName === 'IFRAME')) away();
+      },
+      { passive: true },
+    );
+    window.addEventListener('blur', away);
+  })();
+</script> <div class="backdrop" aria-hidden="true" data-backdrop data-astro-cid-gjphf53z><div class="ambient" aria-hidden="true" data-ambient data-astro-cid-dxadnwir> <span class="ambient__pool ambient__pool--a" data-astro-cid-dxadnwir></span> <span class="ambient__pool ambient__pool--b" data-astro-cid-dxadnwir></span> <span class="ambient__pool ambient__pool--c" data-astro-cid-dxadnwir></span> <span class="ambient__spot" data-astro-cid-dxadnwir></span> </div>  <script type="module" src="/_astro/Ambient.astro_astro_type_script_index_0_lang.BC7kIDYf.js"></script></div> <a class="skip-link" href="#main" data-astro-cid-gjphf53z>Skip to content</a> <div class="chrome chrome--overlay" data-chrome data-astro-cid-q5zgq34x> <header class="header" data-astro-cid-q5zgq34x> <div class="header__bar" data-astro-cid-q5zgq34x> <a class="header__logo" href="/" aria-label="Stride home" data-astro-cid-q5zgq34x> <span class="logo logo--on-dark header__logo-mark" data-astro-cid-b5hwsl7a> <span class="logo__lockup" aria-hidden="true" data-astro-cid-b5hwsl7a></span> <svg class="logo__mark" viewBox="0 0 106 106" aria-hidden="true" data-astro-cid-b5hwsl7a> <path d="M53 53H0L53 0v53Z" fill="currentColor" data-astro-cid-b5hwsl7a></path> <path d="M53 106H0l53-53v53Z" fill="currentColor" data-astro-cid-b5hwsl7a></path> <path d="M106 53H53l53-53v53Z" fill="currentColor" data-astro-cid-b5hwsl7a></path> <path d="M106 106H53l53-53v53Z" fill="currentColor" data-astro-cid-b5hwsl7a></path> </svg> <span class="logo__word" data-astro-cid-b5hwsl7a>Stride</span>  </span>  </a> <div class="header__actions" data-astro-cid-q5zgq34x> <button class="header__menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-menu" data-menu-toggle data-astro-cid-q5zgq34x> <span class="header__burger" aria-hidden="true" data-astro-cid-q5zgq34x><span data-astro-cid-q5zgq34x></span><span data-astro-cid-q5zgq34x></span></span> </button>  <nav class="menu-panel" id="site-menu" aria-label="Site menu" data-menu-panel inert data-astro-cid-q5zgq34x> <span class="menu-panel__glass desk-only" aria-hidden="true" data-menu-glass data-astro-cid-q5zgq34x></span> <ol class="menu-panel__list" role="list" data-astro-cid-q5zgq34x> <li style="--o: 10; --i: 0" data-astro-cid-q5zgq34x> <a class="menu-panel__item is-active" href="/" data-menu-item="group" aria-current="page" data-astro-cid-q5zgq34x><span class="menu-panel__long" data-astro-cid-q5zgq34x><span class="menu-panel__pre" data-astro-cid-q5zgq34x>Stride </span>Group</span><span class="menu-panel__short" data-astro-cid-q5zgq34x>Group</span></a> </li><li style="--o: 9; --i: 1" data-astro-cid-q5zgq34x> <a class="menu-panel__item" href="/social" data-menu-item="social" data-astro-cid-q5zgq34x><span class="menu-panel__long" data-astro-cid-q5zgq34x><span class="menu-panel__pre" data-astro-cid-q5zgq34x>Stride </span>Advertising</span><span class="menu-panel__short" data-astro-cid-q5zgq34x>Social</span></a> </li><li style="--o: 8; --i: 2" data-astro-cid-q5zgq34x> <a class="menu-panel__item" href="/talent" data-menu-item="talent" data-astro-cid-q5zgq34x><span class="menu-panel__long" data-astro-cid-q5zgq34x><span class="menu-panel__pre" data-astro-cid-q5zgq34x>Stride </span>Talent</span><span class="menu-panel__short" data-astro-cid-q5zgq34x>Talent</span></a> </li><li style="--o: 7; --i: 3" data-astro-cid-q5zgq34x> <a class="menu-panel__item" href="/sport" data-menu-item="sport" data-astro-cid-q5zgq34x><span class="menu-panel__long" data-astro-cid-q5zgq34x><span class="menu-panel__pre" data-astro-cid-q5zgq34x>Stride </span>Sport</span><span class="menu-panel__short" data-astro-cid-q5zgq34x>Sport</span></a> </li><li style="--o: 6; --i: 4" data-astro-cid-q5zgq34x> <a class="menu-panel__item" href="/talent/podcasts" data-menu-item="podcasts" data-astro-cid-q5zgq34x><span class="menu-panel__long" data-astro-cid-q5zgq34x><span class="menu-panel__pre" data-astro-cid-q5zgq34x>Stride </span>Podcasts</span><span class="menu-panel__short" data-astro-cid-q5zgq34x>Podcasts</span></a> </li><li style="--o: 5; --i: 5" data-astro-cid-q5zgq34x> <a class="menu-panel__item" href="/talent/speakers" data-menu-item="speakers" data-astro-cid-q5zgq34x><span class="menu-panel__long" data-astro-cid-q5zgq34x><span class="menu-panel__pre" data-astro-cid-q5zgq34x>Stride </span>Speakers</span><span class="menu-panel__short" data-astro-cid-q5zgq34x>Speakers</span></a> </li><li style="--o: 4; --i: 6" data-astro-cid-q5zgq34x> <a class="menu-panel__item" href="/work" data-menu-item="work" data-astro-cid-q5zgq34x><span class="menu-panel__long" data-astro-cid-q5zgq34x>Our Work</span><span class="menu-panel__short" data-astro-cid-q5zgq34x>Work</span></a> </li><li style="--o: 3; --i: 7" data-astro-cid-q5zgq34x> <a class="menu-panel__item" href="/about" data-menu-item="about" data-astro-cid-q5zgq34x>About</a> </li><li style="--o: 2; --i: 8" data-astro-cid-q5zgq34x> <a class="menu-panel__item" href="/contact" data-menu-item="contact" data-astro-cid-q5zgq34x>Contact</a> </li><li style="--o: 1; --i: 9" data-astro-cid-q5zgq34x> <a class="menu-panel__item" href="/sponsorships" data-menu-item="sponsoring" data-astro-cid-q5zgq34x>Our Sponsoring</a> </li><li style="--o: 0; --i: 10" data-astro-cid-q5zgq34x> <a class="menu-panel__item" href="/academy" data-menu-item="education" data-astro-cid-q5zgq34x><span class="menu-panel__long" data-astro-cid-q5zgq34x><span class="menu-panel__pre" data-astro-cid-q5zgq34x>Stride </span>Academy</span><span class="menu-panel__short" data-astro-cid-q5zgq34x>Academy</span></a> </li> </ol> </nav> </div> </div> </header> </div>  <nav class="radial" id="radial-nav" aria-label="Stride areas" data-radial data-lenis-prevent data-current="0" data-astro-cid-cjonfo7r>  <span class="radial__grab" aria-hidden="true" data-astro-cid-cjonfo7r></span> <span class="radial__hub" aria-hidden="true" data-astro-cid-cjonfo7r> <svg viewBox="0 0 106 106" data-astro-cid-cjonfo7r> <path d="M53 53H0L53 0v53Z" fill="currentColor" data-astro-cid-cjonfo7r></path> <path d="M53 106H0l53-53v53Z" fill="currentColor" data-astro-cid-cjonfo7r></path> <path d="M106 53H53l53-53v53Z" fill="currentColor" data-astro-cid-cjonfo7r></path> <path d="M106 106H53l53-53v53Z" fill="currentColor" data-astro-cid-cjonfo7r></path> </svg> </span>  <span class="radial__glass" aria-hidden="true" data-radial-glass data-astro-cid-cjonfo7r></span> <ol class="radial__list" role="list" data-astro-cid-cjonfo7r> <li class="radial__slot" style="--i: 0; --a: 0deg; --o: 1.000" data-astro-cid-cjonfo7r> <a class="radial__item is-active" href="/" data-radial-item="group" aria-current="page" data-astro-cid-cjonfo7r>Stride Group</a> </li><li class="radial__slot" style="--i: 1; --a: 12deg; --o: 0.755" data-astro-cid-cjonfo7r> <a class="radial__item" href="/social" data-radial-item="social" data-astro-cid-cjonfo7r>Stride Advertising</a> </li><li class="radial__slot" style="--i: 2; --a: 24deg; --o: 0.420" data-astro-cid-cjonfo7r> <a class="radial__item" href="/talent" data-radial-item="talent" data-astro-cid-cjonfo7r>Stride Talent</a> </li><li class="radial__slot" style="--i: 3; --a: 36deg; --o: 0.000" data-astro-cid-cjonfo7r> <a class="radial__item" href="/sport" data-radial-item="sport" data-astro-cid-cjonfo7r>Stride Sport</a> </li><li class="radial__slot" style="--i: 4; --a: 48deg; --o: 0.000" data-astro-cid-cjonfo7r> <a class="radial__item" href="/talent/podcasts" data-radial-item="podcasts" data-astro-cid-cjonfo7r>Stride Podcasts</a> </li><li class="radial__slot" style="--i: 5; --a: 60deg; --o: 0.000" data-astro-cid-cjonfo7r> <a class="radial__item" href="/talent/speakers" data-radial-item="speakers" data-astro-cid-cjonfo7r>Stride Speakers</a> </li><li class="radial__slot" style="--i: 6; --a: 72deg; --o: 0.000" data-astro-cid-cjonfo7r> <a class="radial__item" href="/work" data-radial-item="work" data-astro-cid-cjonfo7r>Our Work</a> </li><li class="radial__slot" style="--i: 7; --a: 84deg; --o: 0.000" data-astro-cid-cjonfo7r> <a class="radial__item" href="/about" data-radial-item="about" data-astro-cid-cjonfo7r>About</a> </li><li class="radial__slot" style="--i: 8; --a: 96deg; --o: 0.000" data-astro-cid-cjonfo7r> <a class="radial__item" href="/contact" data-radial-item="contact" data-astro-cid-cjonfo7r>Contact</a> </li><li class="radial__slot" style="--i: 9; --a: 108deg; --o: 0.000" data-astro-cid-cjonfo7r> <a class="radial__item" href="/sponsorships" data-radial-item="sponsoring" data-astro-cid-cjonfo7r>Our Sponsoring</a> </li><li class="radial__slot" style="--i: 10; --a: 120deg; --o: 0.000" data-astro-cid-cjonfo7r> <a class="radial__item" href="/academy" data-radial-item="education" data-astro-cid-cjonfo7r>Stride Academy</a> </li> </ol> </nav>  <script>
+  (function () {
+    var nav = document.getElementById('radial-nav');
+    if (!nav || !matchMedia('(prefers-reduced-motion: no-preference)').matches) return;
+    try {
+      var rec = JSON.parse(sessionStorage.getItem('stride:dial') || 'null');
+      if (!rec || Date.now() - rec.t > 2000 || typeof rec.shown !== 'number' || rec.shown === Number(nav.dataset.current)) return;
+      nav.dataset.from = String(rec.shown);
+      nav.dataset.fromSpeed = String(rec.speed || 0);
+      var place = function (at) {
+        nav.querySelectorAll('.radial__slot').forEach(function (slot, i) {
+          var d = i - at;
+          slot.style.setProperty('--a', (d * 12).toFixed(2) + 'deg');
+          slot.style.setProperty('--o', Math.max(0, 1 - Math.abs(d) * 0.2 - d * d * 0.045).toFixed(3));
+        });
+      };
+      place(rec.shown);
+      // If the dial's script never starts (a failed load), the arc still ends up on this page's area.
+      setTimeout(function () {
+        if (!nav.dataset.radialReady) place(Number(nav.dataset.current));
+      }, 3000);
+    } catch (_) {}
+  })();
+</script>  <script type="module" src="/_astro/EdgeNav.astro_astro_type_script_index_0_lang.C8fG8bTd.js"></script>  <script type="module" src="/_astro/SiteHeader.astro_astro_type_script_index_0_lang.C5QdpluQ.js"></script> <main id="main" class="page page--overlay" data-astro-cid-gjphf53z>  <article class="read" data-read data-minutes="12" data-tone="group" data-astro-cid-j76an5tj> <span class="read__line" aria-hidden="true" data-astro-cid-j76an5tj></span> <span class="read__spark" aria-hidden="true" data-read-spark data-astro-cid-j76an5tj></span> <header class="read__hero on-photo" data-look="deep" data-astro-cid-j76an5tj> <img srcset="/_img/480/assets/insights/role-of-data-influencer-marketing-en-ecc7e.webp 480w, /_img/800/assets/insights/role-of-data-influencer-marketing-en-ecc7e.webp 800w, /_img/1200/assets/insights/role-of-data-influencer-marketing-en-ecc7e.webp 1200w, /_img/1400/assets/insights/role-of-data-influencer-marketing-en-ecc7e.webp 1400w" sizes="100vw" class="read__cover" src="/assets/insights/role-of-data-influencer-marketing-en-ecc7e.jpg" alt="An abstract cover in Stride's blues for an article on marketing: its triangles drawn large in light" fetchpriority="high" decoding="async" data-astro-cid-j76an5tj> <div class="read__scrim" aria-hidden="true" data-backdrop data-astro-cid-j76an5tj></div> <div class="read__head container-wide" data-astro-cid-j76an5tj> <div class="read__panel glass" data-astro-cid-j76an5tj> <nav class="crumbs crumbs--on-dark" aria-label="Breadcrumb" data-astro-cid-imd2pdfx> <ol role="list" data-astro-cid-imd2pdfx> <li data-astro-cid-imd2pdfx> <a href="/" data-astro-cid-imd2pdfx>Home</a> </li><li data-astro-cid-imd2pdfx> <a href="/insights" data-astro-cid-imd2pdfx>Insights</a> </li><li data-astro-cid-imd2pdfx> <span aria-current="page" data-astro-cid-imd2pdfx>Marketing insights</span> </li> </ol> </nav> <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.stride-social.com/"},{"@type":"ListItem","position":2,"name":"Insights","item":"https://www.stride-social.com/insights"},{"@type":"ListItem","position":3,"name":"Marketing insights","item":"https://www.stride-social.com/insights?category=marketing-insights"}]}</script>  <h1 class="read__title exp-title" data-astro-cid-j76an5tj>Role of Data in Influencer Marketing ROI</h1> <p class="read__stand" data-astro-cid-j76an5tj>Role of data in influencer marketing: discover data types, campaign optimisation, performance measurement, and risk management for higher ROI.</p> <p class="exp-label" data-astro-cid-j76an5tj> <time datetime="2026-02-24" data-astro-cid-j76an5tj>23 February 2026</time> · 12 min read · By Alex Hendy </p> </div> </div> </header> <div class="read__body container-wide" data-look="white" data-read-body data-astro-cid-j76an5tj> <aside class="read__side" data-astro-cid-j76an5tj> <p class="exp-label" data-astro-cid-j76an5tj>Share</p> <ul class="read__share" role="list" data-astro-cid-j76an5tj> <li data-astro-cid-j76an5tj><a class="exp-chip" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.stride-social.com%2Finsights%2Frole-of-data-influencer-marketing-en-ecc7e" target="_blank" rel="noopener" data-astro-cid-j76an5tj>LinkedIn<span class="visually-hidden" data-astro-cid-j76an5tj> (opens in a new tab)</span></a></li><li data-astro-cid-j76an5tj><a class="exp-chip" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.stride-social.com%2Finsights%2Frole-of-data-influencer-marketing-en-ecc7e&text=Role%20of%20Data%20in%20Influencer%20Marketing%20ROI" target="_blank" rel="noopener" data-astro-cid-j76an5tj>X<span class="visually-hidden" data-astro-cid-j76an5tj> (opens in a new tab)</span></a></li><li data-astro-cid-j76an5tj><a class="exp-chip" href="mailto:?subject=Role%20of%20Data%20in%20Influencer%20Marketing%20ROI&#38;body=https%3A%2F%2Fwww.stride-social.com%2Finsights%2Frole-of-data-influencer-marketing-en-ecc7e" rel="noopener" data-astro-cid-j76an5tj>Email</a></li> </ul> </aside> <div class="prose read__prose exp-prose" data-astro-cid-jqgqbfy7> <p></p><p>Selecting influencers based on gut feeling leaves many e-commerce campaigns struggling to show meaningful results. With influencer marketing evolving rapidly, data is now at the centre of every smart partnership. Marketing managers know that making sense of engagement, demographics, and conversion metrics means the difference between wasted spend and proven revenue. This article explores how <strong>data-driven insights</strong> empower you to predict campaign outcomes, refine influencer selection, and maximise ROI in digital strategies.</p>
+<h2 id="key-takeaways">Key Takeaways</h2>
+<table>
+<thead>
+<tr>
+<th>Point</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Data Drives Success</strong></td>
+<td>Effective influencer marketing relies on data to ensure precision targeting and measurable ROI, transforming partnerships into profitable ventures.</td>
+</tr>
+<tr>
+<td><strong>Engagement vs. Conversion</strong></td>
+<td>Focus on conversion data rather than vanity metrics, as true success hinges on tangible sales rather than just audience interaction.</td>
+</tr>
+<tr>
+<td><strong>Analytical Influencer Selection</strong></td>
+<td>Use analytics to choose influencers whose audience resonates with your brand, enhancing campaign effectiveness and reducing budget waste.</td>
+</tr>
+<tr>
+<td><strong>Proactive Risk Management</strong></td>
+<td>Mitigate risks by continuously monitoring data for audience authenticity and alignment with brand values to prevent unnecessary setbacks.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="what-data-means-in-influencer-marketing-today">What Data Means in Influencer Marketing Today</h2>
+<p>Data isn’t just numbers anymore—it’s the backbone of every successful influencer partnership you’ll run. For e-commerce brands, understanding what data actually tells you separates campaigns that deliver measurable returns from those that drain budgets without results.</p>
+<p>The role of data has fundamentally shifted how influencer marketing works. Rather than crossing your fingers and hoping an influencer’s audience matches your customers, <a href="https://link.springer.com/article/10.1007/s10660-023-09719-z" rel="nofollow">consumer behaviour insights</a> now let you see exactly who engages, where they’re located, what they purchase, and whether they’ll actually convert. This clarity transforms influencer selection from guesswork into precision targeting.</p>
+<p>Think of data as your competitive advantage. Brands without proper tracking waste 40-60% of their influencer budgets on partnerships that look good on paper but generate minimal actual sales. Data reveals the truth your gut feeling often misses.</p>
+<p>Here’s what modern influencer marketing data covers:</p>
+<ul>
+<li><strong>Audience composition data</strong>: Demographics, location, interests, purchasing power of followers</li>
+<li><strong>Engagement metrics</strong>: Not just likes, but meaningful interactions showing genuine audience interest</li>
+<li><strong>Content performance data</strong>: Which posts convert, what formats drive clicks, optimal posting times</li>
+<li><strong>Brand alignment metrics</strong>: How well influencer values actually match your brand’s positioning</li>
+<li><strong>Conversion data</strong>: Direct sales, traffic attribution, customer lifetime value from specific creators</li>
+</ul>
+<p>When you’re evaluating influencer partnerships, data answers the critical questions: Is this creator reaching real people? Are those people interested in what I sell? Will they actually buy?</p>
+<p>The shift toward data-driven decisions means you can now measure ROI with precision. <a href="/insights/campaign-management-influencer-marketing-en">Campaign management strategies</a> that incorporate detailed tracking show you exactly which partnerships drive revenue and which underperform.</p>
+<blockquote>
+<p>Data transforms influencer marketing from a creative gamble into a predictable revenue channel with measurable outcomes.</p>
+</blockquote>
+<p>For e-commerce specifically, this matters enormously. Your customers take specific journeys—they discover products, compare options, read reviews, then purchase. Data lets you map exactly where influencers fit into that journey and measure their contribution at each stage.</p>
+<p>Without proper data infrastructure, you’re flying blind. With it, you become the marketing manager who can prove that influencer partnerships drive consistent, repeatable revenue.</p>
+<p><em><strong>Pro tip:</strong></em> <em>Set up UTM parameters and unique discount codes for every influencer partnership before launch, allowing you to track which creators drive conversions rather than just impressions.</em></p>
+<h2 id="key-data-types-and-their-campaign-uses">Key Data Types and Their Campaign Uses</h2>
+<p>Not all data matters equally. Some metrics look impressive but tell you nothing about whether customers will actually buy. Others seem boring until you realise they’re predicting revenue months in advance.</p>
+<p>Understanding which data types drive real results is where most e-commerce brands stumble. You’ll see engagement rates climb whilst sales flatten, or impressions spike with no conversions following. The problem isn’t the data—it’s using the wrong data to make decisions.</p>
+<p><img srcset="/_img/480/assets/cms/2b8cb1a2-1771826533943_image.webp 480w, /_img/800/assets/cms/2b8cb1a2-1771826533943_image.webp 800w, /_img/1200/assets/cms/2b8cb1a2-1771826533943_image.webp 1200w, /_img/1344/assets/cms/2b8cb1a2-1771826533943_image.webp 1344w" sizes="100vw" src="/assets/cms/2b8cb1a2-1771826533943_image.png" alt="Team discussing influencer campaign performance charts" loading="lazy"></p>
+<p><a href="https://www.sciencedirect.com/science/article/pii/S0148296324004958" rel="nofollow">Engagement metrics, reach data, and conversion analytics</a> form the foundation of influencer campaign measurement. Yet each serves a completely different purpose in your strategy.</p>
+<p>Here’s what actually matters for your campaigns:</p>
+<ul>
+<li><strong>Engagement data</strong> (likes, shares, comments, saves): Shows audience interest and content quality</li>
+<li><strong>Reach and impressions</strong>: Reveals how many people see the content, but not whether they care</li>
+<li><strong>Click-through rates</strong>: Measures actual traffic movement from influencer posts to your website</li>
+<li><strong>Conversion data</strong>: Direct sales, email sign-ups, or registrations tied to specific creators</li>
+<li><strong>Audience demographics</strong>: Location, age, interests, income level of followers</li>
+<li><strong>Brand safety metrics</strong>: Whether influencer content aligns with your values and messaging</li>
+</ul>
+<p>Global data shows <a href="https://www.statista.com/statistics/1462342/marketers-metrics-influencers-marketing-campaign-success-worldwide/" rel="nofollow">engagement remains the primary success metric</a>, followed by product sales and impressions. This ranking reflects what actually drives business results for most e-commerce brands.</p>
+<p><img srcset="/_img/480/assets/cms/2b8cb1ab-1771826546963-infographic-showing-influence.webp 480w, /_img/800/assets/cms/2b8cb1ab-1771826546963-infographic-showing-influence.webp 800w, /_img/1200/assets/cms/2b8cb1ab-1771826546963-infographic-showing-influence.webp 1200w, /_img/1536/assets/cms/2b8cb1ab-1771826546963-infographic-showing-influence.webp 1536w" sizes="100vw" src="/assets/cms/2b8cb1ab-1771826546963-infographic-showing-influence.png" alt="Infographic showing influencer data types for ROI" loading="lazy"></p>
+<p>To clarify the impact of different influencer marketing data types, here is a summary of how each core metric influences campaign outcomes:</p>
+<table>
+<thead>
+<tr>
+<th>Data Type</th>
+<th>Main Focus</th>
+<th>Typical Campaign Impact</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Engagement Metrics</td>
+<td>Audience interaction quality</td>
+<td>Indicates content resonance</td>
+</tr>
+<tr>
+<td>Reach and Impressions</td>
+<td>Audience size exposure</td>
+<td>Measures overall visibility</td>
+</tr>
+<tr>
+<td>Click-Through Rates</td>
+<td>Direct action from content</td>
+<td>Tracks website traffic driven</td>
+</tr>
+<tr>
+<td>Conversion Data</td>
+<td>Purchases or sign-ups</td>
+<td>Proves direct ROI</td>
+</tr>
+<tr>
+<td>Audience Demographics</td>
+<td>Follower characteristics</td>
+<td>Enables targeted campaigns</td>
+</tr>
+<tr>
+<td>Brand Safety Metrics</td>
+<td>Content appropriateness</td>
+<td>Safeguards brand reputation</td>
+</tr>
+</tbody>
+</table>
+<p>But here’s the critical part: engagement without conversion is vanity. An influencer with 500,000 followers generating 50,000 likes means nothing if zero purchases follow. Another creator with 50,000 followers and lower engagement rates might drive £10,000 in sales.</p>
+<blockquote>
+<p>The most valuable data points to your bottom line, not your vanity metrics.</p>
+</blockquote>
+<p>When designing campaigns, connect each data type to a business outcome. Track engagement to understand content resonance. Measure conversions to prove ROI. Monitor demographic data to refine future influencer selection. Each metric answers a specific question about campaign performance.</p>
+<p>You’ll also need attribution data showing which influencers contributed to purchases across touchpoints. A customer might discover your brand through one creator, research on another’s channel, then purchase from a third’s discount code. Advanced tracking reveals these multi-touch journeys.</p>
+<p><em><strong>Pro tip:</strong></em> <em>Create a simple spreadsheet tracking engagement rates, click-through rates, and conversion rates for every influencer partnership, making patterns visible across campaigns rather than judging each creator in isolation.</em></p>
+<h2 id="optimising-influencer-selection-with-analytics">Optimising Influencer Selection With Analytics</h2>
+<p>Choosing the right influencer feels like gambling when you rely on gut feeling. One creator delivers exceptional results whilst another with similar follower counts bombs. The difference isn’t luck—it’s analytics.</p>
+<p>Analytics transforms influencer selection from a guessing game into a predictable process. Instead of hoping an influencer’s audience matches your customers, you now see exactly who follows them, what they engage with, and whether they’re likely to purchase.</p>
+<p>The selection process starts with clear metrics. <a href="https://repositorio.ucp.pt/bitstream/10400.14/48318/1/203886259.pdf" rel="nofollow">Engagement rates, reach, and cost per impression</a> form your initial shortlist. These quantitative measures quickly eliminate creators whose audiences don’t align with your brand.</p>
+<p>But data goes deeper than surface numbers. You need:</p>
+<ul>
+<li><strong>Audience composition analysis</strong>: Age, location, interests, income level matching your customer profile</li>
+<li><strong>Engagement quality</strong>: Are followers actually interacting, or are they bots and inactive accounts?</li>
+<li><strong>Content alignment</strong>: Does their posting style and messaging fit your brand values?</li>
+<li><strong>Historical performance</strong>: How have their previous branded partnerships performed?</li>
+<li><strong>Audience growth trends</strong>: Is their follower count growing authentically or artificially?</li>
+</ul>
+<p>Where analytics truly shines is in predictive capability. <a href="https://link.springer.com/chapter/10.1007/978-3-031-65727-6_4" rel="nofollow">Advanced data analytics and machine learning identify</a> which creators will drive campaign success before you invest. Rather than waiting months for results, you forecast performance based on audience behaviour patterns.</p>
+<p>This means running your customer data against influencer audience data. If your typical buyer is a 25-35 year old woman in urban areas earning £40,000 plus annually, you filter creators whose audiences match that profile. Simple but transformative.</p>
+<blockquote>
+<p>Data reveals which influencers will actually reach your customers, not just which ones have the biggest follower counts.</p>
+</blockquote>
+<p>Most brands make a critical mistake here: they prioritise follower count over audience quality. An influencer with 500,000 followers whose audience doesn’t match your customers wastes your budget. Another with 50,000 highly aligned followers drives exponential ROI.</p>
+<p>Analytics also reveal authenticity. Influencers with sudden follower spikes, comments from suspicious accounts, or engagement rates wildly inconsistent with follower size are red flags. These signals prevent costly partnerships with inauthentic creators.</p>
+<p>When <a href="/insights/how-to-launch-influencer-campaigns-brand-growth-en">launching influencer campaigns</a>, use analytics to validate each creator against your specific objectives before contracts are signed.</p>
+<p><em><strong>Pro tip:</strong></em> <em>Request historical campaign data from potential influencers showing engagement rates, audience demographics, and conversion results from similar brand partnerships to validate their claims before committing budget.</em></p>
+<h2 id="measuring-roi-and-campaign-effectiveness">Measuring ROI and Campaign Effectiveness</h2>
+<p>Most e-commerce brands struggle with a single question: Did this influencer partnership actually make money? Without proper measurement, you’re left guessing whether campaigns succeeded or drained budget.</p>
+<p>Measuring ROI in influencer marketing isn’t straightforward. Unlike paid advertising with direct cost-to-conversion tracking, influencer campaigns create complex customer journeys. A follower discovers your brand through one creator, researches on another’s content, then purchases after seeing a third influencer’s discount code. Which creator gets credit?</p>
+<p>You need multiple measurement layers. <a href="https://link.springer.com/article/10.1007/s11747-024-01052-7" rel="nofollow">Post characteristics, engagement metrics, and purchase intention</a> all contribute to understanding campaign impact. Each reveals different aspects of effectiveness.</p>
+<p>Start with the metrics that matter most:</p>
+<ul>
+<li><strong>Direct conversions</strong>: Sales directly attributed to influencer discount codes or tracking links</li>
+<li><strong>Cost per acquisition</strong>: Total campaign spend divided by new customers acquired</li>
+<li><strong>Customer lifetime value</strong>: Long-term revenue each influencer-sourced customer generates</li>
+<li><strong>Brand sentiment</strong>: Changes in how audiences perceive your brand post-campaign</li>
+<li><strong>Engagement metrics</strong>: Likes, shares, comments showing content resonance</li>
+<li><strong>Website traffic</strong>: Incremental visitors driven from influencer posts to your site</li>
+</ul>
+<p>But here’s where it gets sophisticated. <a href="https://pubs.aip.org/aip/acp/article/3306/1/030066/3348844/Evaluating-the-return-on-investment-and-overall" rel="nofollow">Real-time performance analytics and AI-enhanced tools</a> reveal impact beyond immediate sales. They show how influencer partnerships affect brand loyalty, repeat purchases, and customer lifetime value months after campaigns end.</p>
+<p>Many brands only count first-touch conversions, missing the full picture. A customer influenced by Creator A might purchase weeks later through your organic search. The influencer still created that demand—traditional attribution just doesn’t capture it.</p>
+<blockquote>
+<p>True ROI includes both immediate conversions and long-term customer value created by influencer partnerships.</p>
+</blockquote>
+<p>When <a href="/insights/brand-influencer-collaboration-process-guide-en">optimising your collaboration process</a>, build measurement into campaigns from day one. Set baseline metrics before launch, define success criteria clearly, and track consistently across all partnerships.</p>
+<p>You also need attribution modelling that accounts for multi-touch journeys. First-click, last-click, and multi-touch attribution models each tell different stories. Use the model matching your business goals—last-click for immediate sales focus, multi-touch for understanding true influencer impact.</p>
+<p>For better decision-making, consider how attribution models influence ROI measurement in influencer campaigns:</p>
+<table>
+<thead>
+<tr>
+<th>Attribution Model</th>
+<th>What It Measures</th>
+<th>Strengths</th>
+<th>Limitations</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>First-Click</td>
+<td>Initial influencer interaction</td>
+<td>Ideal for discovery tracking</td>
+<td>Ignores later influences</td>
+</tr>
+<tr>
+<td>Last-Click</td>
+<td>Final conversion source</td>
+<td>Simple for sales-focused brands</td>
+<td>Misses multi-touch impact</td>
+</tr>
+<tr>
+<td>Multi-Touch</td>
+<td>All influencer touchpoints</td>
+<td>Most accurate for journeys</td>
+<td>Requires robust tracking</td>
+</tr>
+</tbody>
+</table>
+<p>Without sophisticated measurement, you repeat mistakes. With it, you identify which creators generate profitable customers versus vanity metrics.</p>
+<p><em><strong>Pro tip:</strong></em> <em>Implement UTM parameters, unique discount codes, and pixel tracking for every influencer partnership, then analyse conversion data monthly to identify which creators drive profitable customers versus high engagement with low returns.</em></p>
+<h2 id="mitigating-risks-through-data-driven-insights">Mitigating Risks Through Data-Driven Insights</h2>
+<p>Influencer partnerships carry real risks. A creator posts something controversial and your brand gets caught in the backlash. Another inflates engagement metrics with fake followers. A third simply disappears mid-campaign. Data is your shield against these disasters.</p>
+<p>Risks in influencer marketing extend beyond surface-level concerns. <a href="https://www.rgcms.edu.in/wp-content/uploads/2024/02/VOL-21-S4-34.pdf" rel="nofollow">Fraud, brand reputation damage, and loss of campaign control</a> threaten profitability and brand trust. Without proper oversight, you discover problems after spending thousands on partnerships.</p>
+<p>Data transforms risk management from reactive damage control into proactive prevention. Rather than hoping everything goes well, you monitor campaigns continuously using metrics that reveal problems before they escalate.</p>
+<p>Key risk indicators to track:</p>
+<ul>
+<li><strong>Audience authenticity</strong>: Ratio of real followers versus bots or inactive accounts</li>
+<li><strong>Engagement anomalies</strong>: Sudden spikes in followers or engagement indicating artificial inflation</li>
+<li><strong>Content alignment</strong>: Whether influencer posts match brand values and guidelines</li>
+<li><strong>Audience sentiment</strong>: Comments and mentions showing whether followers respond positively or negatively</li>
+<li><strong>Performance consistency</strong>: Engagement rates remaining stable, not fluctuating wildly between posts</li>
+<li><strong>Regulatory compliance</strong>: Proper disclosure of sponsored content and adherence to advertising standards</li>
+</ul>
+<p>Authenticity verification matters enormously. Influencers with sudden follower spikes, engagement rates inconsistent with their audience size, or comments from suspicious accounts are red flags. Data reveals these patterns immediately.</p>
+<p><a href="https://link.springer.com/chapter/10.1007/978-3-031-65727-6_5" rel="nofollow">Transparent data practices and continuous campaign evaluation</a> protect your brand from unethical influencers and ensure campaign integrity. Monitoring doesn’t mean distrust—it means verification.</p>
+<p>Brand safety data prevents costly mistakes. Before partnering, analyse an influencer’s recent content, audience composition, and engagement quality. During campaigns, monitor daily for posts that could damage your reputation. This takes minutes with proper analytics tools.</p>
+<blockquote>
+<p>Data-driven risk management catches problems early, preventing expensive brand damage and campaign failure.</p>
+</blockquote>
+<p>You should also track influencer behaviour after partnerships end. Do they continue promoting your brand authentically, or disappear completely? Do their new partnerships align with your industry, or do they promote competitors? Data reveals whether influencers are genuinely interested in your brand or purely transactional.</p>
+<p>Regulatory compliance is another critical risk. Influencers must clearly disclose sponsored content. Data systems can flag posts missing required disclosures before they go live, protecting you from FTC violations or advertising standard breaches.</p>
+<p><em><strong>Pro tip:</strong></em> <em>Use influencer verification tools to audit audience authenticity before signing contracts, checking for bot followers, fake engagement, and suspicious account activity that indicates artificial metrics inflation.</em></p>
+<h2 id="unlock-the-power-of-data-driven-influencer-marketing-with-stride-social">Unlock the Power of Data-Driven Influencer Marketing with Stride Social</h2>
+<p>In the fast-evolving world of influencer marketing, the biggest challenge for brands is turning data into measurable ROI instead of chasing vanity metrics. If you struggle with identifying authentic audiences, tracking true conversions, or predicting which creators will deliver real sales, you are not alone. The article highlights the need to go beyond engagement numbers and leverage audience demographics, conversion data, and attribution models for effective campaigns. That is where a trusted growth partner with deep analytics expertise makes all the difference.</p>
+<p><strong>Stride Social</strong> specialises in crafting strategy-led influencer campaigns that transform complex data into actionable insights. Through rigorous influencer vetting, precise audience alignment, and transparent performance tracking, we help brands unlock true value from their partnerships. Our full-service approach covers everything from influencer talent management to end-to-end campaign optimisation so you can stop guessing and start measuring tangible growth. Discover how we combine authentic storytelling with data-driven decisions to boost your brand awareness, engagement, and sales across TikTok, Instagram, and YouTube.</p>
+<ul>
+<li>Identify influencers whose audiences genuinely match your customer profiles</li>
+<li>Access comprehensive conversion tracking tailored for multi-touch influencer journeys</li>
+<li>Protect your brand with continuous monitoring of authenticity and content alignment</li>
+</ul>
+<p>Elevate your influencer marketing strategy with Stride Social and turn data into your most powerful competitive advantage.</p>
+<p><a href="/">Explore our influencer marketing services</a> today and see how precision-driven campaigns drive lasting growth.</p>
+<p>See how we manage influencer campaigns for maximum ROI</p>
+<p>Learn more about launching and optimising your influencer partnerships</p>
+<p>Stride Social is ready to guide your brand from data confusion to measurable success. Act now to transform your influencer ROI.</p>
+<h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
+<h3 id="what-types-of-data-are-crucial-for-measuring-roi-in-influencer-marketing">What types of data are crucial for measuring ROI in influencer marketing?</h3>
+<p>Key data types for measuring ROI include engagement metrics, conversion data, audience demographics, click-through rates, and brand safety metrics. Each type reveals different aspects of campaign performance and overall effectiveness.</p>
+<h3 id="how-can-i-optimise-my-influencer-selection-using-data">How can I optimise my influencer selection using data?</h3>
+<p>To optimise influencer selection, analyse audience composition, engagement quality, historical performance, and content alignment with your brand values. Predictive analytics can further help forecast which influencers are likely to drive campaign success.</p>
+<h3 id="what-is-the-importance-of-tracking-conversions-in-influencer-marketing">What is the importance of tracking conversions in influencer marketing?</h3>
+<p>Tracking conversions is vital as it directly measures the sales generated from influencer campaigns. It helps businesses determine the return on investment and assess which influencers are effectively driving customer purchases.</p>
+<h3 id="how-can-data-help-mitigate-risks-in-influencer-marketing">How can data help mitigate risks in influencer marketing?</h3>
+<p>Data can mitigate risks by providing insights into audience authenticity, engagement anomalies, content alignment with brand values, and regulatory compliance. Continuous monitoring of these factors helps identify potential issues before they escalate.</p>
+<h2 id="recommended">Recommended</h2>
+<ul>
+<li><a href="/insights/campaign-management-influencer-marketing-en">Campaign Management in Influencer Marketing: Driving ROI</a></li>
+<li><a href="/insights/influencer-marketing-strategy-explained-en">Influencer Marketing Strategy Explained: Driving ROI</a></li>
+<li><a href="/insights/benefits-of-influencer-marketing-ecommerce-brands-en">7 Key Benefits of Influencer Marketing for E-Commerce Brands</a></li>
+<li><a href="/insights/how-to-launch-influencer-campaigns-brand-growth-en">How to Launch Influencer Campaigns for Measurable Brand Growth</a></li>
+<li><a href="https://firstmedia.pt/2026/02/17/marketing-interativo-potencie-engajamento">Marketing Interativo: Potencie Captação e Engajamento</a></li>
+</ul> </div>   </div> <nav class="read__rail desk-only" aria-label="Sections" data-read-rail data-astro-cid-j76an5tj></nav> <div class="read__quote glass on-photo" hidden data-read-quote data-astro-cid-j76an5tj> <a class="exp-chip" href="#" target="_blank" rel="noopener" data-read-share data-astro-cid-j76an5tj>Share on X</a> <button class="exp-chip" type="button" data-read-copy data-done="Link copied" data-astro-cid-j76an5tj>Copy link</button> </div> <p class="read__left glass on-photo" aria-hidden="true" data-astro-cid-j76an5tj><span data-read-left data-astro-cid-j76an5tj>12</span> min left</p> </article> <section class="deck" id="read-more" aria-label="More in Marketing insights" data-deck data-variant="row" data-tone="group" data-look="deep" data-astro-cid-rct72ntc>  <div class="deck__inner container-wide" data-astro-cid-rct72ntc>  <div class="deck__panels" data-astro-cid-rct72ntc> <div class="deck__panel" id="read-more-panel-more" role="tabpanel" aria-labelledby="read-more-tab-more" data-deck-panel="more" data-grow-row data-astro-cid-rct72ntc>  <ul class="deck__cards" role="list" style="--n: 8" data-astro-cid-rct72ntc> <li style="--i: 0" data-astro-cid-rct72ntc> <a class="deck__card on-photo" href="/insights/mobile-game-influencer-marketing-step-by-step-guide-en" draggable="false" data-astro-cid-rct72ntc>  <img srcset="/_img/480/assets/insights/mobile-game-influencer-marketing-step-by-step-guide-en.webp 480w, /_img/800/assets/insights/mobile-game-influencer-marketing-step-by-step-guide-en.webp 800w, /_img/1200/assets/insights/mobile-game-influencer-marketing-step-by-step-guide-en.webp 1200w, /_img/1400/assets/insights/mobile-game-influencer-marketing-step-by-step-guide-en.webp 1400w" class="deck__image" src="/assets/insights/mobile-game-influencer-marketing-step-by-step-guide-en.jpg" alt="" sizes="(min-width: 1024px) 21vw, 300px" loading="lazy" decoding="async" draggable="false" data-astro-cid-rct72ntc>  <span class="deck__text" data-astro-cid-rct72ntc> <h2 class="deck__name" data-astro-cid-rct72ntc>Mobile game influencer marketing: a step-by-step guide</h2> <span class="deck__copy" data-astro-cid-rct72ntc>15 April 2026 · 9 min</span>   </span>  <span class="deck__arrow" aria-hidden="true" data-astro-cid-rct72ntc> <svg viewBox="0 0 24 24" data-astro-cid-rct72ntc><path d="M5 12h13.5M13 6.5 18.5 12 13 17.5" data-astro-cid-rct72ntc></path></svg> </span> </a> </li><li style="--i: 1" data-astro-cid-rct72ntc> <a class="deck__card on-photo" href="/insights/top-7-benefits-ugc-food-brands-2026-en" draggable="false" data-astro-cid-rct72ntc>  <img srcset="/_img/480/assets/insights/top-7-benefits-ugc-food-brands-2026-en.webp 480w, /_img/800/assets/insights/top-7-benefits-ugc-food-brands-2026-en.webp 800w, /_img/1200/assets/insights/top-7-benefits-ugc-food-brands-2026-en.webp 1200w, /_img/1400/assets/insights/top-7-benefits-ugc-food-brands-2026-en.webp 1400w" class="deck__image" src="/assets/insights/top-7-benefits-ugc-food-brands-2026-en.jpg" alt="" sizes="(min-width: 1024px) 21vw, 300px" loading="lazy" decoding="async" draggable="false" data-astro-cid-rct72ntc>  <span class="deck__text" data-astro-cid-rct72ntc> <h2 class="deck__name" data-astro-cid-rct72ntc>Top 7 benefits of UGC for food brands in 2026</h2> <span class="deck__copy" data-astro-cid-rct72ntc>15 April 2026 · 10 min</span>   </span>  <span class="deck__arrow" aria-hidden="true" data-astro-cid-rct72ntc> <svg viewBox="0 0 24 24" data-astro-cid-rct72ntc><path d="M5 12h13.5M13 6.5 18.5 12 13 17.5" data-astro-cid-rct72ntc></path></svg> </span> </a> </li><li style="--i: 2" data-astro-cid-rct72ntc> <a class="deck__card on-photo" href="/insights/measuring-influencer-marketing-roi-comprehensive-guide-en" draggable="false" data-astro-cid-rct72ntc>  <img srcset="/_img/480/assets/insights/measuring-influencer-marketing-roi-comprehensive-guide-en.webp 480w, /_img/800/assets/insights/measuring-influencer-marketing-roi-comprehensive-guide-en.webp 800w, /_img/1200/assets/insights/measuring-influencer-marketing-roi-comprehensive-guide-en.webp 1200w, /_img/1400/assets/insights/measuring-influencer-marketing-roi-comprehensive-guide-en.webp 1400w" class="deck__image" src="/assets/insights/measuring-influencer-marketing-roi-comprehensive-guide-en.jpg" alt="" sizes="(min-width: 1024px) 21vw, 300px" loading="lazy" decoding="async" draggable="false" data-astro-cid-rct72ntc>  <span class="deck__text" data-astro-cid-rct72ntc> <h2 class="deck__name" data-astro-cid-rct72ntc>Measuring influencer marketing ROI: comprehensive guide</h2> <span class="deck__copy" data-astro-cid-rct72ntc>15 April 2026 · 11 min</span>   </span>  <span class="deck__arrow" aria-hidden="true" data-astro-cid-rct72ntc> <svg viewBox="0 0 24 24" data-astro-cid-rct72ntc><path d="M5 12h13.5M13 6.5 18.5 12 13 17.5" data-astro-cid-rct72ntc></path></svg> </span> </a> </li><li style="--i: 3" data-astro-cid-rct72ntc> <a class="deck__card on-photo" href="/insights/launch-travel-influencer-campaign-2026-en" draggable="false" data-astro-cid-rct72ntc>  <img srcset="/_img/480/assets/insights/launch-travel-influencer-campaign-2026-en.webp 480w, /_img/800/assets/insights/launch-travel-influencer-campaign-2026-en.webp 800w, /_img/1200/assets/insights/launch-travel-influencer-campaign-2026-en.webp 1200w, /_img/1400/assets/insights/launch-travel-influencer-campaign-2026-en.webp 1400w" class="deck__image" src="/assets/insights/launch-travel-influencer-campaign-2026-en.jpg" alt="" sizes="(min-width: 1024px) 21vw, 300px" loading="lazy" decoding="async" draggable="false" data-astro-cid-rct72ntc>  <span class="deck__text" data-astro-cid-rct72ntc> <h2 class="deck__name" data-astro-cid-rct72ntc>How to launch a travel influencer campaign in 2026</h2> <span class="deck__copy" data-astro-cid-rct72ntc>15 April 2026 · 10 min</span>   </span>  <span class="deck__arrow" aria-hidden="true" data-astro-cid-rct72ntc> <svg viewBox="0 0 24 24" data-astro-cid-rct72ntc><path d="M5 12h13.5M13 6.5 18.5 12 13 17.5" data-astro-cid-rct72ntc></path></svg> </span> </a> </li><li style="--i: 4" data-astro-cid-rct72ntc> <a class="deck__card on-photo" href="/insights/how-to-launch-pet-influencer-campaign-2026-en" draggable="false" data-astro-cid-rct72ntc>  <img srcset="/_img/480/assets/insights/how-to-launch-pet-influencer-campaign-2026-en.webp 480w, /_img/800/assets/insights/how-to-launch-pet-influencer-campaign-2026-en.webp 800w, /_img/1200/assets/insights/how-to-launch-pet-influencer-campaign-2026-en.webp 1200w, /_img/1400/assets/insights/how-to-launch-pet-influencer-campaign-2026-en.webp 1400w" class="deck__image" src="/assets/insights/how-to-launch-pet-influencer-campaign-2026-en.jpg" alt="" sizes="(min-width: 1024px) 21vw, 300px" loading="lazy" decoding="async" draggable="false" data-astro-cid-rct72ntc>  <span class="deck__text" data-astro-cid-rct72ntc> <h2 class="deck__name" data-astro-cid-rct72ntc>How to launch a pet influencer campaign in 2026</h2> <span class="deck__copy" data-astro-cid-rct72ntc>15 April 2026 · 10 min</span>   </span>  <span class="deck__arrow" aria-hidden="true" data-astro-cid-rct72ntc> <svg viewBox="0 0 24 24" data-astro-cid-rct72ntc><path d="M5 12h13.5M13 6.5 18.5 12 13 17.5" data-astro-cid-rct72ntc></path></svg> </span> </a> </li><li style="--i: 5" data-astro-cid-rct72ntc> <a class="deck__card on-photo" href="/insights/harness-storytelling-boost-influencer-marketing-impact-en" draggable="false" data-astro-cid-rct72ntc>  <img srcset="/_img/480/assets/insights/harness-storytelling-boost-influencer-marketing-impact-en.webp 480w, /_img/800/assets/insights/harness-storytelling-boost-influencer-marketing-impact-en.webp 800w, /_img/1200/assets/insights/harness-storytelling-boost-influencer-marketing-impact-en.webp 1200w, /_img/1400/assets/insights/harness-storytelling-boost-influencer-marketing-impact-en.webp 1400w" class="deck__image" src="/assets/insights/harness-storytelling-boost-influencer-marketing-impact-en.jpg" alt="" sizes="(min-width: 1024px) 21vw, 300px" loading="lazy" decoding="async" draggable="false" data-astro-cid-rct72ntc>  <span class="deck__text" data-astro-cid-rct72ntc> <h2 class="deck__name" data-astro-cid-rct72ntc>Harness storytelling to boost influencer marketing impact</h2> <span class="deck__copy" data-astro-cid-rct72ntc>15 April 2026 · 10 min</span>   </span>  <span class="deck__arrow" aria-hidden="true" data-astro-cid-rct72ntc> <svg viewBox="0 0 24 24" data-astro-cid-rct72ntc><path d="M5 12h13.5M13 6.5 18.5 12 13 17.5" data-astro-cid-rct72ntc></path></svg> </span> </a> </li><li style="--i: 6" data-astro-cid-rct72ntc> <a class="deck__card on-photo" href="/insights/influencer-selection-explained-tech-ecommerce-success-en" draggable="false" data-astro-cid-rct72ntc>  <img srcset="/_img/480/assets/insights/influencer-selection-explained-tech-ecommerce-success-en.webp 480w, /_img/800/assets/insights/influencer-selection-explained-tech-ecommerce-success-en.webp 800w, /_img/1200/assets/insights/influencer-selection-explained-tech-ecommerce-success-en.webp 1200w, /_img/1400/assets/insights/influencer-selection-explained-tech-ecommerce-success-en.webp 1400w" class="deck__image" src="/assets/insights/influencer-selection-explained-tech-ecommerce-success-en.jpg" alt="" sizes="(min-width: 1024px) 21vw, 300px" loading="lazy" decoding="async" draggable="false" data-astro-cid-rct72ntc>  <span class="deck__text" data-astro-cid-rct72ntc> <h2 class="deck__name" data-astro-cid-rct72ntc>Influencer selection explained for tech e-commerce success</h2> <span class="deck__copy" data-astro-cid-rct72ntc>15 April 2026 · 9 min</span>   </span>  <span class="deck__arrow" aria-hidden="true" data-astro-cid-rct72ntc> <svg viewBox="0 0 24 24" data-astro-cid-rct72ntc><path d="M5 12h13.5M13 6.5 18.5 12 13 17.5" data-astro-cid-rct72ntc></path></svg> </span> </a> </li><li style="--i: 7" data-astro-cid-rct72ntc> <a class="deck__card on-photo" href="/insights/why-nano-influencers-drive-67-higher-engagement-2026-en" draggable="false" data-astro-cid-rct72ntc>  <img srcset="/_img/480/assets/insights/why-nano-influencers-drive-67-higher-engagement-2026-en.webp 480w, /_img/800/assets/insights/why-nano-influencers-drive-67-higher-engagement-2026-en.webp 800w, /_img/1200/assets/insights/why-nano-influencers-drive-67-higher-engagement-2026-en.webp 1200w, /_img/1400/assets/insights/why-nano-influencers-drive-67-higher-engagement-2026-en.webp 1400w" class="deck__image" src="/assets/insights/why-nano-influencers-drive-67-higher-engagement-2026-en.jpg" alt="" sizes="(min-width: 1024px) 21vw, 300px" loading="lazy" decoding="async" draggable="false" data-astro-cid-rct72ntc>  <span class="deck__text" data-astro-cid-rct72ntc> <h2 class="deck__name" data-astro-cid-rct72ntc>Why nano influencers drive 67% higher engagement in 2026</h2> <span class="deck__copy" data-astro-cid-rct72ntc>15 April 2026 · 10 min</span>   </span>  <span class="deck__arrow" aria-hidden="true" data-astro-cid-rct72ntc> <svg viewBox="0 0 24 24" data-astro-cid-rct72ntc><path d="M5 12h13.5M13 6.5 18.5 12 13 17.5" data-astro-cid-rct72ntc></path></svg> </span> </a> </li> </ul> </div>  </div>   <div class="deck__bar" data-astro-cid-rct72ntc>  <div class="deck__tabs" role="tablist" aria-label="More in Marketing insights" data-deck-tabs data-astro-cid-rct72ntc> <button class="deck__tab" type="button" role="tab" id="read-more-tab-more" aria-controls="read-more-panel-more" aria-selected="true" tabindex="0" data-deck-tab="more" data-astro-cid-rct72ntc> <svg viewBox="0 0 24 24" aria-hidden="true" data-astro-cid-rct72ntc><path d="M4 5.500A2.5 2.5 0 0 1 6.5 3H20v15H6.500A2.5 2.5 0 0 0 4 20.500v-15Z"/><path d="M4 20.500A2.5 2.5 0 0 0 6.5 21H20"/></svg> More in Marketing insights </button> </div> <a class="deck__tab deck__tab--link" href="/insights" data-astro-cid-rct72ntc> <svg viewBox="0 0 24 24" aria-hidden="true" data-astro-cid-rct72ntc><rect x="3" y="5.5" width="18" height="13" rx="2"/><path d="m3.5 7 8.5 6 8.5-6"/></svg> All Insights  </a> </div> </div>  </section>  <script type="module" src="/_astro/Deck.astro_astro_type_script_index_0_lang.DjnN8BDr.js"></script> </main> <footer class="footer" data-look="deep" data-footer data-astro-cid-fyrrssvj> <div class="footer__inner" data-astro-cid-fyrrssvj> <div class="footer__brand" data-astro-cid-fyrrssvj> <a href="/" aria-label="Stride home" data-astro-cid-fyrrssvj><span class="logo logo--on-dark" data-astro-cid-b5hwsl7a> <span class="logo__lockup" aria-hidden="true" data-astro-cid-b5hwsl7a></span> <svg class="logo__mark" viewBox="0 0 106 106" aria-hidden="true" data-astro-cid-b5hwsl7a> <path d="M53 53H0L53 0v53Z" fill="currentColor" data-astro-cid-b5hwsl7a></path> <path d="M53 106H0l53-53v53Z" fill="currentColor" data-astro-cid-b5hwsl7a></path> <path d="M106 53H53l53-53v53Z" fill="currentColor" data-astro-cid-b5hwsl7a></path> <path d="M106 106H53l53-53v53Z" fill="currentColor" data-astro-cid-b5hwsl7a></path> </svg> <span class="logo__word" data-astro-cid-b5hwsl7a>Stride</span>  </span> </a> </div> <nav class="footer__cols" aria-label="Footer" data-astro-cid-fyrrssvj> <div class="footer__col" style="--c: 0" data-astro-cid-fyrrssvj> <p class="footer__title" data-astro-cid-fyrrssvj>Group</p> <ul role="list" data-astro-cid-fyrrssvj> <li style="--r: 0" data-astro-cid-fyrrssvj><a href="/about" data-astro-cid-fyrrssvj>About</a></li><li style="--r: 1" data-astro-cid-fyrrssvj><a href="/sponsorships" data-astro-cid-fyrrssvj>Sponsorships</a></li><li style="--r: 2" data-astro-cid-fyrrssvj><a href="/careers" data-astro-cid-fyrrssvj>Careers</a></li><li style="--r: 3" data-astro-cid-fyrrssvj><a href="/insights" data-astro-cid-fyrrssvj>Insights</a></li> </ul> </div><div class="footer__col" style="--c: 1" data-astro-cid-fyrrssvj> <p class="footer__title" data-astro-cid-fyrrssvj>Stride Social</p> <ul role="list" data-astro-cid-fyrrssvj> <li style="--r: 0" data-astro-cid-fyrrssvj><a href="/social" data-astro-cid-fyrrssvj>Services</a></li><li style="--r: 1" data-astro-cid-fyrrssvj><a href="/work" data-astro-cid-fyrrssvj>Our Work</a></li><li style="--r: 2" data-astro-cid-fyrrssvj><a href="/social/enquire" data-astro-cid-fyrrssvj>Start a campaign</a></li> </ul> </div><div class="footer__col" style="--c: 2" data-astro-cid-fyrrssvj> <p class="footer__title" data-astro-cid-fyrrssvj>Stride Talent</p> <ul role="list" data-astro-cid-fyrrssvj> <li style="--r: 0" data-astro-cid-fyrrssvj><a href="/talent" data-astro-cid-fyrrssvj>Overview</a></li><li style="--r: 1" data-astro-cid-fyrrssvj><a href="/talent/apply" data-astro-cid-fyrrssvj>Apply</a></li> </ul> </div><div class="footer__col" style="--c: 3" data-astro-cid-fyrrssvj> <p class="footer__title" data-astro-cid-fyrrssvj>Stride Academy</p> <ul role="list" data-astro-cid-fyrrssvj> <li style="--r: 0" data-astro-cid-fyrrssvj><a href="/academy" data-astro-cid-fyrrssvj>Overview</a></li> </ul> </div> <div class="footer__col" style="--c: 4" data-astro-cid-fyrrssvj> <p class="footer__title" data-astro-cid-fyrrssvj>Contact</p> <ul role="list" data-astro-cid-fyrrssvj> <li style="--r: 0" data-astro-cid-fyrrssvj><a href="/social/enquire" data-astro-cid-fyrrssvj>Brand enquiries</a></li><li style="--r: 1" data-astro-cid-fyrrssvj><a href="/talent/apply" data-astro-cid-fyrrssvj>Creator applications</a></li><li style="--r: 2" data-astro-cid-fyrrssvj><a href="/academy" data-astro-cid-fyrrssvj>Academy</a></li><li style="--r: 3" data-astro-cid-fyrrssvj><a href="/contact" data-astro-cid-fyrrssvj>General enquiries</a></li> </ul> <ul class="footer__social" role="list" data-astro-cid-fyrrssvj> <li style="--r: 4" data-astro-cid-fyrrssvj><a href="https://www.instagram.com/stridetalent/" target="_blank" rel="noopener" data-astro-cid-fyrrssvj>Instagram</a></li><li style="--r: 5" data-astro-cid-fyrrssvj><a href="https://www.linkedin.com/company/stridesocialagency/" target="_blank" rel="noopener" data-astro-cid-fyrrssvj>LinkedIn</a></li><li style="--r: 6" data-astro-cid-fyrrssvj><a href="https://www.tiktok.com/@stridesocial" target="_blank" rel="noopener" data-astro-cid-fyrrssvj>TikTok</a></li> </ul> </div> </nav> <div class="footer__base" data-astro-cid-fyrrssvj> <p data-astro-cid-fyrrssvj>© 2026 Stride Global Holdings Pte. Ltd · 202527987G</p> <ul class="footer__legal" role="list" data-astro-cid-fyrrssvj> <li data-astro-cid-fyrrssvj><a href="/privacy" data-astro-cid-fyrrssvj>Privacy</a></li><li data-astro-cid-fyrrssvj><a href="/cookies" data-astro-cid-fyrrssvj>Cookies</a></li><li data-astro-cid-fyrrssvj><a href="/terms" data-astro-cid-fyrrssvj>Terms</a></li>  </ul> </div> </div> </footer>  <script type="module">const e=document.querySelector("[data-footer]"),t=e?.querySelector(".footer__inner");if(e&&t&&window.matchMedia("(prefers-reduced-motion: no-preference)").matches&&!e.classList.contains("footer--no-desk")&&t.getBoundingClientRect().top>=window.innerHeight){e.classList.add("is-armed");const n=new IntersectionObserver(i=>{i.some(o=>o.isIntersecting&&o.intersectionRatio>=.24)&&(n.disconnect(),e.classList.add("is-in"))},{threshold:.25});n.observe(t)}</script> <script type="module">const i=e=>{try{const t=JSON.parse(localStorage.getItem(e)??"null");return t?.choice==="accept"||t?.choice==="reject"?t.choice:null}catch{return null}},l=(e,t)=>{try{localStorage.setItem(e,JSON.stringify({choice:t,date:new Date().toISOString()}))}catch{}};let c=!1;function g(e){if(c)return;c=!0,window.dataLayer=window.dataLayer||[],window.gtag=function(){window.dataLayer.push(arguments)},window.gtag("consent","default",{ad_storage:"denied",ad_user_data:"denied",ad_personalization:"denied",analytics_storage:"denied"}),window.gtag("consent","update",{analytics_storage:"granted"}),window.gtag("js",new Date),window.gtag("config",e,{anonymize_ip:!0});const t=document.createElement("script");t.async=!0,t.src=`https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(e)}`,document.head.append(t)}function u(){const e=document.querySelector("[data-consent]");if(!e||e.dataset.ready)return;e.dataset.ready="true";const t=e.dataset.key,o=e.dataset.ga4??"",d=a=>{a==="accept"&&o&&g(o)},s=()=>{e.hidden=!1,e.querySelector('[data-consent-choice="reject"]')?.focus()},r=i(t);r?d(r):e.hidden=!1,e.addEventListener("click",a=>{const n=a.target.closest("[data-consent-choice]")?.dataset.consentChoice;n&&(l(t,n),e.hidden=!0,d(n),n==="reject"&&c&&location.reload())}),document.querySelectorAll("[data-consent-open]").forEach(a=>a.addEventListener("click",s))}u();</script> <script type="module" src="/_astro/SiteLayout.astro_astro_type_script_index_0_lang.D17JUeMR.js"></script> </body> </html>   <script type="module" src="/_astro/_slug_.astro_astro_type_script_index_0_lang.CObug-Ed.js"></script>

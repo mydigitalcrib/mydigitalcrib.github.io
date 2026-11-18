@@ -1,0 +1,79 @@
+{
+  "$ref": "#/definitions/team",
+  "definitions": {
+    "team": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "role": {
+          "type": "string"
+        },
+        "department": {
+          "type": "string",
+          "enum": [
+            "leadership",
+            "talent",
+            "campaigns",
+            "social",
+            "sales",
+            "operations"
+          ]
+        },
+        "photo": {
+          "type": "object",
+          "properties": {
+            "src": {
+              "type": "string"
+            },
+            "alt": {
+              "type": "string",
+              "minLength": 1,
+              "errorMessage": {
+                "minLength": "Alt text is required"
+              }
+            }
+          },
+          "required": [
+            "src",
+            "alt"
+          ],
+          "additionalProperties": false
+        },
+        "photoAlt": {
+          "$ref": "#/definitions/team/properties/photo"
+        },
+        "character": {
+          "$ref": "#/definitions/team/properties/photo"
+        },
+        "bio": {
+          "type": "string"
+        },
+        "linkedin": {
+          "type": "string",
+          "format": "uri"
+        },
+        "order": {
+          "type": "number"
+        },
+        "visible": {
+          "type": "boolean",
+          "default": true
+        },
+        "$schema": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "role",
+        "department",
+        "photo",
+        "order"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

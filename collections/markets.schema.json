@@ -1,0 +1,52 @@
+{
+  "$ref": "#/definitions/markets",
+  "definitions": {
+    "markets": {
+      "type": "object",
+      "properties": {
+        "$schema": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "label": {
+            "type": "string"
+          },
+          "roles": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "talent-market",
+                "team-location",
+                "operating-market",
+                "office"
+              ]
+            }
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "verified",
+              "legacy",
+              "unverified"
+            ]
+          },
+          "source": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "label",
+          "roles",
+          "status",
+          "source"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

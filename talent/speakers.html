@@ -1,0 +1,398 @@
+<!DOCTYPE html><html lang="en" data-division="talent" data-area="5" data-look="deep" data-ink="dark" class="has-backdrop" data-astro-cid-gjphf53z> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><script>
+      document.documentElement.classList.add('js');
+      // Safety net: if the motion scripts never start, show everything rather than hidden content.
+      setTimeout(() => {
+        const root = document.documentElement;
+        if (!root.classList.contains('motion-ready')) root.classList.remove('js');
+      }, 3000);
+    </script><title>Stride Speakers | Book a speaker</title><meta name="description" content="We support leading voices across industries: book one for your conference, panel or company event."><link rel="canonical" href="https://www.stride-social.com/talent/speakers"><meta name="robots" content="noindex"><meta property="og:site_name" content="Stride"><meta property="og:type" content="website"><meta property="og:url" content="https://www.stride-social.com/talent/speakers"><meta property="og:title" content="Stride Speakers | Book a speaker"><meta property="og:description" content="We support leading voices across industries: book one for your conference, panel or company event."><meta property="og:image" content="https://www.stride-social.com/og/stride-default.png"><meta property="og:locale" content="en_GB"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Stride Speakers | Book a speaker"><meta name="twitter:description" content="We support leading voices across industries: book one for your conference, panel or company event."><meta name="twitter:image" content="https://www.stride-social.com/og/stride-default.png"><link rel="icon" href="/assets/site/b5e9e5f9-group-15066.png" type="image/png"><link rel="apple-touch-icon" href="/assets/site/223c1594-stride-social.jpg"><script>
+      // A link to a single case study opens it over Our Work instead (the case pages are out of date, the owner,
+      // 2026-11-13; work-canvas.ts reads the address), on every screen since Our Work's canvas came to phones.
+      document.addEventListener('click', function (e) {
+        if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+        var a = e.target && e.target.closest ? e.target.closest('a[href^="/work/"]') : null;
+        var m = a && a.getAttribute('href').match(/^\/work\/([^/?#]+)\/?$/);
+        if (!m) return;
+        e.preventDefault();
+        location.assign('/work#' + m[1]);
+      });
+    </script><script>
+      // Desktop: the header and the dial have layers of their own while the page changes (motion.css), named only
+      // for the change, since a named element's glass can't blur what's behind it. The dial's turn starts with the
+      // change (edge-nav.ts reads window.strideReveal).
+      (function () {
+        var desk = matchMedia('(min-width: 1024px)');
+        var name = function (on) {
+          var chrome = document.querySelector('[data-chrome]');
+          var dial = document.querySelector('[data-radial]');
+          if (chrome) chrome.style.viewTransitionName = on ? 'site-chrome' : '';
+          if (dial) dial.style.viewTransitionName = on ? 'site-nav' : '';
+        };
+        addEventListener('pageswap', function (e) {
+          if (e.viewTransition && desk.matches) name(true);
+        });
+        addEventListener('pageshow', function (e) {
+          if (e.persisted) name(false);
+        });
+        addEventListener('pagereveal', function (e) {
+          var vt = e.viewTransition;
+          window.strideReveal = vt || null;
+          if (!vt) return;
+          if (desk.matches) {
+            name(true);
+            vt.finished.then(function () { name(false); }, function () { name(false); });
+          }
+          if (!vt.types) return;
+          // The page follows the dial (desktop): to an area further down it, the page rises from below;
+          // further up, it comes down from above. The last page left where it was (edge-nav.ts).
+          if (!desk.matches) return;
+          try {
+            var rec = JSON.parse(sessionStorage.getItem('stride:dial') || 'null');
+            var area = Number(document.documentElement.dataset.area);
+            if (rec && Date.now() - rec.t < 2000 && typeof rec.area === 'number' && rec.area !== area) vt.types.add(area > rec.area ? 'dial-down' : 'dial-up');
+          } catch (_) {}
+        });
+      })();
+    </script><link rel="stylesheet" href="/_astro/_planned_.vUGVah22.css">
+<style>.crumbs[data-astro-cid-imd2pdfx]{min-width:0;max-width:100%}.crumbs[data-astro-cid-imd2pdfx] ol[data-astro-cid-imd2pdfx]{display:flex;flex-wrap:nowrap;gap:var(--space-2);min-width:0;white-space:nowrap;font-family:var(--font-mono);font-size:var(--type-label);letter-spacing:.04em;text-transform:uppercase}.crumbs[data-astro-cid-imd2pdfx] li[data-astro-cid-imd2pdfx]{flex:none}.crumbs[data-astro-cid-imd2pdfx] li[data-astro-cid-imd2pdfx]:last-child{flex:0 1 auto;min-width:0;overflow:hidden;text-overflow:ellipsis}.crumbs[data-astro-cid-imd2pdfx] li[data-astro-cid-imd2pdfx]+li[data-astro-cid-imd2pdfx]:before{content:"/";margin-right:var(--space-2);opacity:.5}.crumbs--on-light[data-astro-cid-imd2pdfx]{color:var(--slate)}.crumbs--on-dark[data-astro-cid-imd2pdfx]{color:rgb(var(--ink) / .7)}.crumbs[data-astro-cid-imd2pdfx] a[data-astro-cid-imd2pdfx]:hover{text-decoration:underline;text-underline-offset:3px}@media(min-width:1024px){.crumbs[data-astro-cid-imd2pdfx] a[data-astro-cid-imd2pdfx]{padding-bottom:.1875rem;background:linear-gradient(currentColor,currentColor) 100% 100% / 0% 1px no-repeat;transition:background-size .36s var(--ease-out)}.crumbs[data-astro-cid-imd2pdfx] a[data-astro-cid-imd2pdfx]:is(:hover,:focus-visible){background-position:0 100%;background-size:100% 1px;text-decoration:none}}
+</style>
+<link rel="stylesheet" href="/_astro/sport.CkYmlwFP.css">
+<style>.ph-tag[data-astro-cid-alqkqqzj]{position:absolute;top:var(--space-3);right:var(--space-3);z-index:5;display:inline-flex;gap:.4em;max-width:calc(100% - 2 * var(--space-3));padding:4px 10px;background:var(--lime);color:var(--navy-900);font-family:var(--font-mono);font-size:.6875rem;font-weight:500;letter-spacing:.04em;line-height:1.4;text-transform:uppercase}.ph-tag__label[data-astro-cid-alqkqqzj]{font-weight:600}.ph-tag--inline[data-astro-cid-alqkqqzj]{position:static;align-self:start;justify-self:start;width:fit-content;max-width:100%}.ph-tag--off[data-astro-cid-alqkqqzj]{display:none!important}.ph-block[data-astro-cid-alqkqqzj]{display:grid;gap:var(--space-3);padding:var(--space-6);border:1px dashed color-mix(in srgb,currentColor 45%,transparent);background:repeating-linear-gradient(-45deg,transparent 0 14px,color-mix(in srgb,currentColor 4%,transparent) 14px 28px);color:inherit}.ph-block__label[data-astro-cid-alqkqqzj]{justify-self:start;padding:4px 10px;background:var(--lime);color:var(--navy-900);font-family:var(--font-mono);font-size:var(--type-label);font-weight:600;letter-spacing:.04em;text-transform:uppercase}.ph-block--quiet[data-astro-cid-alqkqqzj] .ph-block__label[data-astro-cid-alqkqqzj]{padding:0;background:none;color:inherit;opacity:.7}.ph-block__body[data-astro-cid-alqkqqzj]{max-width:68ch;font-size:var(--type-small);line-height:1.6}@media(min-width:1024px){.ph-tag[data-astro-cid-alqkqqzj],.ph-block__label[data-astro-cid-alqkqqzj]{padding:.25rem .625rem}.ph-block[data-astro-cid-alqkqqzj]{background:repeating-linear-gradient(-45deg,transparent 0 .875rem,color-mix(in srgb,currentColor 4%,transparent) .875rem 1.75rem)}}
+</style></head> <body data-astro-cid-gjphf53z>  <div class="loader" aria-hidden="true" data-loader data-astro-cid-4t6vrqh4> <div class="loader__inner" data-astro-cid-4t6vrqh4> <svg class="loader__mark" viewBox="0 0 106 106" data-astro-cid-4t6vrqh4> <path class="loader__t loader__t--1" d="M53 53H0L53 0v53Z" data-astro-cid-4t6vrqh4></path> <path class="loader__t loader__t--2" d="M106 53H53l53-53v53Z" data-astro-cid-4t6vrqh4></path> <path class="loader__t loader__t--3" d="M53 106H0l53-53v53Z" data-astro-cid-4t6vrqh4></path> <path class="loader__t loader__t--4" d="M106 106H53l53-53v53Z" data-astro-cid-4t6vrqh4></path> </svg> <p class="loader__pct" data-astro-cid-4t6vrqh4><span data-loader-pct data-astro-cid-4t6vrqh4>0</span><i data-astro-cid-4t6vrqh4>%</i></p> </div> </div> <script>
+  (function () {
+    var root = document.documentElement;
+    var el = document.querySelector('[data-loader]');
+    if (!el) return;
+    // The homepage's intro is its own loading screen (the owner, 2026-11-13): when it's about to play, this steps
+    // aside. On phones and tablets it plays whenever motion is allowed; on desktop on the first visit of a session, or
+    // on a reload (home/CoverHero.astro), unless sent to the three sides.
+    if (location.pathname.replace(/\/index\.html$/, '/') === '/') {
+      var intro = false;
+      if (!matchMedia('(min-width: 1024px)').matches) intro = !matchMedia('(prefers-reduced-motion: reduce)').matches;
+      else if (location.hash !== '#stride-group') {
+        try {
+          var nav = performance.getEntriesByType('navigation')[0];
+          intro = sessionStorage.getItem('stride:intro') !== 'seen' || !!(nav && nav.type === 'reload');
+        } catch (e) {
+          intro = true;
+        }
+      }
+      if (intro) {
+        el.parentNode.removeChild(el);
+        return;
+      }
+    }
+    root.classList.add('is-loading');
+
+    var MIN = 900; // shown at least this long: the mark builds
+    var CAP = 12000; // never longer than this (a page with a wall of photographs on a slow connection needs it)
+    var MAX_MEDIA = 48; // pictures and videos on the first screen it waits for, at most
+    var start = performance.now();
+    var calm = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var pct = el.querySelector('[data-loader-pct]');
+    var waits = []; // each returns true once its thing has arrived
+    var tracked = [];
+    var domReady = false;
+    var pageLoaded = false;
+    var loadedAt = 0;
+    var fontsIn = false;
+    var over = false;
+    var shown = 0;
+    var raf = 0;
+    waits.push(function () { return domReady; });
+    waits.push(function () { return pageLoaded; });
+    waits.push(function () { return fontsIn; });
+
+    // Scrolling waits with the entrances: nothing moves under the screen while it's up.
+    var KEYS = { ' ': 1, PageDown: 1, PageUp: 1, ArrowDown: 1, ArrowUp: 1, Home: 1, End: 1 };
+    var block = function (e) {
+      if (e.type === 'keydown' && !KEYS[e.key]) return;
+      e.preventDefault();
+      e.stopImmediatePropagation();
+    };
+    ['wheel', 'touchmove', 'keydown'].forEach(function (t) { addEventListener(t, block, { capture: true, passive: false }); });
+
+    // On the first screen as it's drawn now, or where it will stand once its entrance has played (the entrances are
+    // held while this is up, some starting off the screen): its place in the layout, before any transform.
+    var onScreen = function (m) {
+      var r = m.getBoundingClientRect();
+      if (r.width > 0 && r.height > 0 && r.bottom > 0 && r.top < innerHeight && r.right > 0 && r.left < innerWidth) return true;
+      var w = m.offsetWidth;
+      var h = m.offsetHeight;
+      if (!w || !h) return false;
+      var x = 0;
+      var y = -scrollY;
+      for (var n = m; n; n = n.offsetParent) {
+        x += n.offsetLeft;
+        y += n.offsetTop;
+      }
+      return y + h > 0 && y < innerHeight && x + w > 0 && x < innerWidth;
+    };
+    // The first screen's pictures and videos (looked for again as the page loads, for any its scripts add or move in).
+    var scan = function () {
+      document.querySelectorAll('img, video').forEach(function (m) {
+        if (tracked.length >= MAX_MEDIA || tracked.indexOf(m) > -1 || m.closest('[data-loader]') || !onScreen(m)) return;
+        tracked.push(m);
+        if (m.tagName === 'IMG') {
+          // In once it has loaded and been decoded (so it appears whole). One that failed isn't waited for; one with no
+          // picture asked for yet (a script gives it one) is, while the list is open.
+          var ok = false;
+          var decoding = false;
+          waits.push(function () {
+            if (ok) return true;
+            var asked = !!(m.currentSrc || m.getAttribute('src'));
+            if (m.complete && m.naturalWidth > 0) {
+              if (!decoding) {
+                decoding = true;
+                var settle = function () { ok = true; };
+                (m.decode ? m.decode() : Promise.resolve()).then(settle, settle);
+              }
+              return false;
+            }
+            if (m.complete && asked) return true;
+            if (!asked) return pageLoaded && performance.now() - loadedAt > 1200;
+            return false;
+          });
+          return;
+        }
+        var poster = m.getAttribute('poster');
+        if (poster) {
+          var posterIn = false;
+          var p = new Image();
+          p.onload = p.onerror = function () { posterIn = true; };
+          p.src = poster;
+          waits.push(function () { return posterIn; });
+        }
+        // Its first frame, when it's going to play: one still fetching once the page (and its scripts) have loaded.
+        waits.push(function () {
+          if (m.readyState >= 2 || m.error) return true;
+          return pageLoaded && performance.now() - loadedAt > 300 && m.networkState !== 2;
+        });
+      });
+    };
+
+    var drop = function () {
+      if (el.parentNode) el.parentNode.removeChild(el);
+    };
+    var end = function () {
+      if (over) return;
+      over = true;
+      cancelAnimationFrame(raf);
+      if (pct) pct.textContent = '100';
+      // It opens: the page's entrances start as it fades (loaded.ts), and scrolling is free.
+      ['wheel', 'touchmove', 'keydown'].forEach(function (t) { removeEventListener(t, block, { capture: true }); });
+      el.classList.add('is-done');
+      root.classList.remove('is-loading');
+      window.strideLoaded = true;
+      dispatchEvent(new Event('stride:loaded'));
+      setTimeout(drop, calm ? 220 : 560);
+    };
+    var frame = 0;
+    var tick = function () {
+      var t = performance.now() - start;
+      // Pictures the page's scripts lay out on the first screen after it has loaded (a fanned hand of cards) are
+      // looked for too, for a moment; then the list is settled, so something moving on its own can't hold it forever.
+      if (domReady && frame++ % 15 === 0 && !(pageLoaded && performance.now() - loadedAt > 1200)) scan();
+      var done = 0;
+      for (var i = 0; i < waits.length; i++) if (waits[i]()) done++;
+      var all = done === waits.length;
+      // What has arrived, and a slow creep with the time so it never seems stuck.
+      // Never back down, even when the page's scripts add a picture to wait for.
+      var target = all ? 1 : Math.max(shown, Math.min(0.96, Math.max(done / waits.length, Math.min(0.9, t / CAP))));
+      shown += (target - shown) * (all ? 0.22 : 0.1);
+      if (all && 1 - shown < 0.01) shown = 1;
+      if (pct) pct.textContent = String(Math.floor(shown * 100));
+      if ((shown >= 1 && t >= MIN) || t >= CAP) return end();
+      raf = requestAnimationFrame(tick);
+    };
+    raf = requestAnimationFrame(tick);
+    // If frames stop (a tab in the background), the cap still holds once it's back; and if the script above ever
+    // stalled, the CSS takes it away by itself.
+    setTimeout(function () { if (!over) end(); }, CAP + 400);
+
+    // Arriving through a page transition: the loading screen is the arrival, so the transition is skipped, and the
+    // page plays its entrances as if it had just opened.
+    addEventListener('pagereveal', function (e) {
+      if (!e.viewTransition || over) return;
+      // A skipped transition rejects its promises; they're answered here so nothing reports an error.
+      e.viewTransition.ready.catch(function () {});
+      e.viewTransition.finished.catch(function () {});
+      e.viewTransition.skipTransition();
+    });
+
+    var dom = function () {
+      domReady = true;
+      scan();
+      // The fonts the page has asked for by now.
+      if (document.fonts && document.fonts.ready) document.fonts.ready.then(function () { fontsIn = true; }, function () { fontsIn = true; });
+      else fontsIn = true;
+    };
+    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', dom, { once: true });
+    else dom();
+    var onLoad = function () {
+      pageLoaded = true;
+      loadedAt = performance.now();
+      scan();
+    };
+    if (document.readyState === 'complete') onLoad();
+    else addEventListener('load', onLoad, { once: true });
+  })();
+</script>   <div class="cursor-glass" aria-hidden="true" data-cursor-glass> <div class="cursor-glass__shape cursor-glass__shape--arrow"> <span class="cursor-glass__pane" style="clip-path: path('M3.4 2.8 25.3 11.5c1.7.7 1.6 3.1-.2 3.5l-8.5 2.2c-.6.2-1 .6-1.2 1.2l-2.2 8.5c-.4 1.8-2.8 1.9-3.5.2L2.8 3.4c-.2-.5.1-.8.6-.6Z')"></span> <svg viewBox="0 0 32 32" width="32" height="32"> <path class="cursor-glass__edge" d="M3.4 2.8 25.3 11.5c1.7.7 1.6 3.1-.2 3.5l-8.5 2.2c-.6.2-1 .6-1.2 1.2l-2.2 8.5c-.4 1.8-2.8 1.9-3.5.2L2.8 3.4c-.2-.5.1-.8.6-.6Z"></path> <path class="cursor-glass__shine" d="M6.200 6.200 18.500 11"></path> </svg> </div> <div class="cursor-glass__shape cursor-glass__shape--hand"> <span class="cursor-glass__pane" style="clip-path: path('M13.2 2.5c1.4 0 2.5 1.100 2.5 2.500v7.600c.4-.6 1.100-1 1.900-1 1 0 1.900.6 2.200 1.500.4-.4 1-.7 1.700-.7 1.100 0 2 .7 2.300 1.700.3-.2.7-.3 1.100-.3 1.300 0 2.300 1 2.300 2.300v5.400c0 4.600-3.300 7.900-7.900 7.900H17c-2.600 0-4.600-1-6.200-3l-5.600-6.900c-.8-1-.7-2.400.3-3.200 1-.8 2.300-.7 3.200.2l2 2.100V5c0-1.400 1.100-2.500 2.500-2.500Z')"></span> <svg viewBox="0 0 32 32" width="32" height="32"> <path class="cursor-glass__edge" d="M13.2 2.5c1.4 0 2.5 1.100 2.5 2.500v7.600c.4-.6 1.100-1 1.900-1 1 0 1.900.6 2.200 1.500.4-.4 1-.7 1.700-.7 1.100 0 2 .7 2.300 1.700.3-.2.7-.3 1.100-.3 1.300 0 2.300 1 2.300 2.300v5.400c0 4.600-3.300 7.900-7.900 7.900H17c-2.600 0-4.600-1-6.200-3l-5.600-6.900c-.8-1-.7-2.400.3-3.200 1-.8 2.300-.7 3.200.2l2 2.100V5c0-1.400 1.100-2.500 2.500-2.500Z"></path> <path class="cursor-glass__shine" d="M13.200 5v6M15.700 13v3.200M19.800 13.400v2.800M23.800 14.400v2.400"></path> </svg> </div> </div>  <script>
+  // Inline, so it runs as the page is first drawn rather than once its bundles have loaded: the old navy arrow used to
+  // show through each page's loading screen until the glass took over (the owner, 2026-11-18: "the old cursor is
+  // showing up"). And it carries over from page to page: where the pointer was as the last page went (a link followed,
+  // a reload), the glass is there at once, so the old arrow never shows in between; moving the mouse takes it from there.
+  // It takes over at the first move of a real mouse, and steps aside for text fields and anything with its own cursor.
+  (() => {
+    const glass = document.querySelector('[data-cursor-glass]');
+    if (!glass || glass.dataset.ready) return;
+    glass.dataset.ready = 'true';
+    const root = document.documentElement;
+    const here = window.matchMedia('(hover: hover) and (pointer: fine) and (min-width: 1024px)');
+    const FIELD = "input:not([type='checkbox'], [type='radio'], [type='range']), textarea, select, [contenteditable='true'], [data-own-cursor]";
+    const PRESS = "a[href], button, label, summary, [role='button'], [role='tab'], [role='slider'], [data-grow-card], [data-press]";
+    // What can be taken hold of and dragged: the dial (between its labels), a plain deck's row that slides (more than
+    // four cards), anything marked so. The deck's row needs :has(), which an older browser would throw on in closest().
+    const ROW = CSS.supports('selector(:has(a))') ? ', .deck:not(.deck--made) .deck__panel:has(li:nth-child(5)) .deck__cards' : '';
+    const GRAB = '.radial__grab, [data-grab]' + ROW;
+    const KEY = 'stride:pointer';
+    // Its size follows the screen's, as the page's does (the desktop's scale: the root size over 16, scripts/system/scale.ts).
+    const fit = () => glass.style.setProperty('--k', String(parseFloat(getComputedStyle(root).fontSize) / 16 || 1));
+    fit();
+    window.addEventListener('resize', fit, { passive: true });
+    let x = -1;
+    let y = -1;
+    let held = false; // pressed on something that drags, until let go
+    const place = () => {
+      glass.style.transform = 'translate(' + (x - 3) + 'px, ' + (y - 3) + 'px)';
+    };
+    const read = (over) => {
+      glass.classList.toggle('is-on', !!over && !over.closest(FIELD));
+      glass.classList.toggle('is-press', !!(over && over.closest(PRESS)));
+      const grabbing = held || root.classList.contains('is-radial-dragging');
+      glass.classList.toggle('is-grab', grabbing || !!(over && over.closest(GRAB)));
+      glass.classList.toggle('is-grabbing', grabbing);
+    };
+
+    // Where the last page left the pointer, if that was a moment ago and it's on this screen: the glass there now.
+    try {
+      const last = JSON.parse(sessionStorage.getItem(KEY) || 'null');
+      if (last && here.matches && Date.now() - last.t < 15000 && last.x >= 0 && last.y >= 0 && last.x < innerWidth && last.y < innerHeight) {
+        x = last.x;
+        y = last.y;
+        root.classList.add('has-glass-cursor');
+        place();
+        glass.classList.add('is-on');
+        const look = () => x >= 0 && read(document.elementFromPoint(x, y));
+        if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', look, { once: true });
+        else look();
+      }
+    } catch (e) {
+      /* no storage: the old arrow until the mouse moves */
+    }
+    window.addEventListener('pagehide', () => {
+      try {
+        if (x >= 0 && root.classList.contains('has-glass-cursor')) sessionStorage.setItem(KEY, JSON.stringify({ x: x, y: y, t: Date.now() }));
+        else sessionStorage.removeItem(KEY);
+      } catch (e) {
+        /* no storage */
+      }
+    });
+
+    window.addEventListener(
+      'pointermove',
+      (e) => {
+        if (e.pointerType !== 'mouse' || !here.matches) {
+          root.classList.remove('has-glass-cursor');
+          return;
+        }
+        root.classList.add('has-glass-cursor');
+        x = e.clientX;
+        y = e.clientY;
+        place();
+        read(e.target instanceof Element ? e.target : null);
+      },
+      { passive: true },
+    );
+    window.addEventListener(
+      'pointerdown',
+      (e) => {
+        glass.classList.add('is-down');
+        held = e.target instanceof Element && !!e.target.closest(GRAB);
+        if (held) read(e.target);
+      },
+      { passive: true },
+    );
+    window.addEventListener(
+      'pointerup',
+      (e) => {
+        glass.classList.remove('is-down');
+        if (!held) return;
+        held = false;
+        read(e.target instanceof Element ? e.target : null);
+      },
+      { passive: true },
+    );
+    // The page scrolled under a still pointer: what's under it now (once a frame at most).
+    let queued = false;
+    window.addEventListener(
+      'scroll',
+      () => {
+        if (queued || x < 0 || !root.classList.contains('has-glass-cursor')) return;
+        queued = true;
+        requestAnimationFrame(() => {
+          queued = false;
+          read(document.elementFromPoint(x, y));
+        });
+      },
+      { passive: true },
+    );
+    // Off the page, or onto an embedded player that draws its own cursor (the parent hears nothing more until the
+    // pointer comes back), it goes, and a scroll meanwhile doesn't bring it back where the pointer last was; the next
+    // move on the page does.
+    const away = () => {
+      x = -1;
+      glass.classList.remove('is-on');
+    };
+    root.addEventListener('pointerleave', away);
+    document.addEventListener(
+      'pointerout',
+      (e) => {
+        const to = e.relatedTarget;
+        if (!to || (to instanceof Element && to.tagName === 'IFRAME')) away();
+      },
+      { passive: true },
+    );
+    window.addEventListener('blur', away);
+  })();
+</script> <div class="backdrop" aria-hidden="true" data-backdrop data-astro-cid-gjphf53z><div class="ambient" aria-hidden="true" data-ambient data-astro-cid-dxadnwir> <span class="ambient__pool ambient__pool--a" data-astro-cid-dxadnwir></span> <span class="ambient__pool ambient__pool--b" data-astro-cid-dxadnwir></span> <span class="ambient__pool ambient__pool--c" data-astro-cid-dxadnwir></span> <span class="ambient__spot" data-astro-cid-dxadnwir></span> </div>  <script type="module" src="/_astro/Ambient.astro_astro_type_script_index_0_lang.BC7kIDYf.js"></script></div> <a class="skip-link" href="#main" data-astro-cid-gjphf53z>Skip to content</a> <div class="chrome chrome--overlay" data-chrome data-astro-cid-q5zgq34x> <header class="header" data-astro-cid-q5zgq34x> <div class="header__bar" data-astro-cid-q5zgq34x> <a class="header__logo" href="/" aria-label="Stride home" data-astro-cid-q5zgq34x> <span class="logo logo--on-dark header__logo-mark" data-astro-cid-b5hwsl7a> <span class="logo__lockup" aria-hidden="true" data-astro-cid-b5hwsl7a></span> <svg class="logo__mark" viewBox="0 0 106 106" aria-hidden="true" data-astro-cid-b5hwsl7a> <path d="M53 53H0L53 0v53Z" fill="currentColor" data-astro-cid-b5hwsl7a></path> <path d="M53 106H0l53-53v53Z" fill="currentColor" data-astro-cid-b5hwsl7a></path> <path d="M106 53H53l53-53v53Z" fill="currentColor" data-astro-cid-b5hwsl7a></path> <path d="M106 106H53l53-53v53Z" fill="currentColor" data-astro-cid-b5hwsl7a></path> </svg> <span class="logo__word" data-astro-cid-b5hwsl7a>Stride</span>  </span>  </a> <div class="header__actions" data-astro-cid-q5zgq34x> <button class="header__menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-menu" data-menu-toggle data-astro-cid-q5zgq34x> <span class="header__burger" aria-hidden="true" data-astro-cid-q5zgq34x><span data-astro-cid-q5zgq34x></span><span data-astro-cid-q5zgq34x></span></span> </button>  <nav class="menu-panel" id="site-menu" aria-label="Site menu" data-menu-panel inert data-astro-cid-q5zgq34x> <span class="menu-panel__glass desk-only" aria-hidden="true" data-menu-glass data-astro-cid-q5zgq34x></span> <ol class="menu-panel__list" role="list" data-astro-cid-q5zgq34x> <li style="--o: 10; --i: 0" data-astro-cid-q5zgq34x> <a class="menu-panel__item" href="/" data-menu-item="group" data-astro-cid-q5zgq34x><span class="menu-panel__long" data-astro-cid-q5zgq34x><span class="menu-panel__pre" data-astro-cid-q5zgq34x>Stride </span>Group</span><span class="menu-panel__short" data-astro-cid-q5zgq34x>Group</span></a> </li><li style="--o: 9; --i: 1" data-astro-cid-q5zgq34x> <a class="menu-panel__item" href="/social" data-menu-item="social" data-astro-cid-q5zgq34x><span class="menu-panel__long" data-astro-cid-q5zgq34x><span class="menu-panel__pre" data-astro-cid-q5zgq34x>Stride </span>Advertising</span><span class="menu-panel__short" data-astro-cid-q5zgq34x>Social</span></a> </li><li style="--o: 8; --i: 2" data-astro-cid-q5zgq34x> <a class="menu-panel__item" href="/talent" data-menu-item="talent" data-astro-cid-q5zgq34x><span class="menu-panel__long" data-astro-cid-q5zgq34x><span class="menu-panel__pre" data-astro-cid-q5zgq34x>Stride </span>Talent</span><span class="menu-panel__short" data-astro-cid-q5zgq34x>Talent</span></a> </li><li style="--o: 7; --i: 3" data-astro-cid-q5zgq34x> <a class="menu-panel__item" href="/sport" data-menu-item="sport" data-astro-cid-q5zgq34x><span class="menu-panel__long" data-astro-cid-q5zgq34x><span class="menu-panel__pre" data-astro-cid-q5zgq34x>Stride </span>Sport</span><span class="menu-panel__short" data-astro-cid-q5zgq34x>Sport</span></a> </li><li style="--o: 6; --i: 4" data-astro-cid-q5zgq34x> <a class="menu-panel__item" href="/talent/podcasts" data-menu-item="podcasts" data-astro-cid-q5zgq34x><span class="menu-panel__long" data-astro-cid-q5zgq34x><span class="menu-panel__pre" data-astro-cid-q5zgq34x>Stride </span>Podcasts</span><span class="menu-panel__short" data-astro-cid-q5zgq34x>Podcasts</span></a> </li><li style="--o: 5; --i: 5" data-astro-cid-q5zgq34x> <a class="menu-panel__item is-active" href="/talent/speakers" data-menu-item="speakers" aria-current="page" data-astro-cid-q5zgq34x><span class="menu-panel__long" data-astro-cid-q5zgq34x><span class="menu-panel__pre" data-astro-cid-q5zgq34x>Stride </span>Speakers</span><span class="menu-panel__short" data-astro-cid-q5zgq34x>Speakers</span></a> </li><li style="--o: 4; --i: 6" data-astro-cid-q5zgq34x> <a class="menu-panel__item" href="/work" data-menu-item="work" data-astro-cid-q5zgq34x><span class="menu-panel__long" data-astro-cid-q5zgq34x>Our Work</span><span class="menu-panel__short" data-astro-cid-q5zgq34x>Work</span></a> </li><li style="--o: 3; --i: 7" data-astro-cid-q5zgq34x> <a class="menu-panel__item" href="/about" data-menu-item="about" data-astro-cid-q5zgq34x>About</a> </li><li style="--o: 2; --i: 8" data-astro-cid-q5zgq34x> <a class="menu-panel__item" href="/contact" data-menu-item="contact" data-astro-cid-q5zgq34x>Contact</a> </li><li style="--o: 1; --i: 9" data-astro-cid-q5zgq34x> <a class="menu-panel__item" href="/sponsorships" data-menu-item="sponsoring" data-astro-cid-q5zgq34x>Our Sponsoring</a> </li><li style="--o: 0; --i: 10" data-astro-cid-q5zgq34x> <a class="menu-panel__item" href="/academy" data-menu-item="education" data-astro-cid-q5zgq34x><span class="menu-panel__long" data-astro-cid-q5zgq34x><span class="menu-panel__pre" data-astro-cid-q5zgq34x>Stride </span>Academy</span><span class="menu-panel__short" data-astro-cid-q5zgq34x>Academy</span></a> </li> </ol> </nav> </div> </div> </header> </div>  <nav class="radial" id="radial-nav" aria-label="Stride areas" data-radial data-lenis-prevent data-current="5" data-astro-cid-cjonfo7r>  <span class="radial__grab" aria-hidden="true" data-astro-cid-cjonfo7r></span> <span class="radial__hub" aria-hidden="true" data-astro-cid-cjonfo7r> <svg viewBox="0 0 106 106" data-astro-cid-cjonfo7r> <path d="M53 53H0L53 0v53Z" fill="currentColor" data-astro-cid-cjonfo7r></path> <path d="M53 106H0l53-53v53Z" fill="currentColor" data-astro-cid-cjonfo7r></path> <path d="M106 53H53l53-53v53Z" fill="currentColor" data-astro-cid-cjonfo7r></path> <path d="M106 106H53l53-53v53Z" fill="currentColor" data-astro-cid-cjonfo7r></path> </svg> </span>  <span class="radial__glass" aria-hidden="true" data-radial-glass data-astro-cid-cjonfo7r></span> <ol class="radial__list" role="list" data-astro-cid-cjonfo7r> <li class="radial__slot" style="--i: 0; --a: -60deg; --o: 0.000" data-astro-cid-cjonfo7r> <a class="radial__item" href="/" data-radial-item="group" data-astro-cid-cjonfo7r>Stride Group</a> </li><li class="radial__slot" style="--i: 1; --a: -48deg; --o: 0.000" data-astro-cid-cjonfo7r> <a class="radial__item" href="/social" data-radial-item="social" data-astro-cid-cjonfo7r>Stride Advertising</a> </li><li class="radial__slot" style="--i: 2; --a: -36deg; --o: 0.000" data-astro-cid-cjonfo7r> <a class="radial__item" href="/talent" data-radial-item="talent" data-astro-cid-cjonfo7r>Stride Talent</a> </li><li class="radial__slot" style="--i: 3; --a: -24deg; --o: 0.420" data-astro-cid-cjonfo7r> <a class="radial__item" href="/sport" data-radial-item="sport" data-astro-cid-cjonfo7r>Stride Sport</a> </li><li class="radial__slot" style="--i: 4; --a: -12deg; --o: 0.755" data-astro-cid-cjonfo7r> <a class="radial__item" href="/talent/podcasts" data-radial-item="podcasts" data-astro-cid-cjonfo7r>Stride Podcasts</a> </li><li class="radial__slot" style="--i: 5; --a: 0deg; --o: 1.000" data-astro-cid-cjonfo7r> <a class="radial__item is-active" href="/talent/speakers" data-radial-item="speakers" aria-current="page" data-astro-cid-cjonfo7r>Stride Speakers</a> </li><li class="radial__slot" style="--i: 6; --a: 12deg; --o: 0.755" data-astro-cid-cjonfo7r> <a class="radial__item" href="/work" data-radial-item="work" data-astro-cid-cjonfo7r>Our Work</a> </li><li class="radial__slot" style="--i: 7; --a: 24deg; --o: 0.420" data-astro-cid-cjonfo7r> <a class="radial__item" href="/about" data-radial-item="about" data-astro-cid-cjonfo7r>About</a> </li><li class="radial__slot" style="--i: 8; --a: 36deg; --o: 0.000" data-astro-cid-cjonfo7r> <a class="radial__item" href="/contact" data-radial-item="contact" data-astro-cid-cjonfo7r>Contact</a> </li><li class="radial__slot" style="--i: 9; --a: 48deg; --o: 0.000" data-astro-cid-cjonfo7r> <a class="radial__item" href="/sponsorships" data-radial-item="sponsoring" data-astro-cid-cjonfo7r>Our Sponsoring</a> </li><li class="radial__slot" style="--i: 10; --a: 60deg; --o: 0.000" data-astro-cid-cjonfo7r> <a class="radial__item" href="/academy" data-radial-item="education" data-astro-cid-cjonfo7r>Stride Academy</a> </li> </ol> </nav>  <script>
+  (function () {
+    var nav = document.getElementById('radial-nav');
+    if (!nav || !matchMedia('(prefers-reduced-motion: no-preference)').matches) return;
+    try {
+      var rec = JSON.parse(sessionStorage.getItem('stride:dial') || 'null');
+      if (!rec || Date.now() - rec.t > 2000 || typeof rec.shown !== 'number' || rec.shown === Number(nav.dataset.current)) return;
+      nav.dataset.from = String(rec.shown);
+      nav.dataset.fromSpeed = String(rec.speed || 0);
+      var place = function (at) {
+        nav.querySelectorAll('.radial__slot').forEach(function (slot, i) {
+          var d = i - at;
+          slot.style.setProperty('--a', (d * 12).toFixed(2) + 'deg');
+          slot.style.setProperty('--o', Math.max(0, 1 - Math.abs(d) * 0.2 - d * d * 0.045).toFixed(3));
+        });
+      };
+      place(rec.shown);
+      // If the dial's script never starts (a failed load), the arc still ends up on this page's area.
+      setTimeout(function () {
+        if (!nav.dataset.radialReady) place(Number(nav.dataset.current));
+      }, 3000);
+    } catch (_) {}
+  })();
+</script>  <script type="module" src="/_astro/EdgeNav.astro_astro_type_script_index_0_lang.C8fG8bTd.js"></script>  <script type="module" src="/_astro/SiteHeader.astro_astro_type_script_index_0_lang.C5QdpluQ.js"></script> <main id="main" class="page page--overlay" data-astro-cid-gjphf53z>  <script>
+  (() => {
+    const nav = performance.getEntriesByType('navigation')[0];
+    if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    if ((nav && nav.type !== 'navigate') || location.hash || scrollY > innerHeight * 0.4) return;
+    document.documentElement.classList.add('spec-cue');
+  })();
+</script><section class="spec spec--hero" aria-labelledby="spec-title" data-tone="talent" data-look="deep" data-page="speakers" data-astro-cid-tcr7lfvk> <div class="spec__inner" data-astro-cid-tcr7lfvk> <nav class="crumbs crumbs--on-dark" aria-label="Breadcrumb" data-astro-cid-imd2pdfx> <ol role="list" data-astro-cid-imd2pdfx> <li data-astro-cid-imd2pdfx> <a href="/" data-astro-cid-imd2pdfx>Home</a> </li><li data-astro-cid-imd2pdfx> <a href="/talent" data-astro-cid-imd2pdfx>Stride Talent</a> </li><li data-astro-cid-imd2pdfx> <span aria-current="page" data-astro-cid-imd2pdfx>Stride Speakers</span> </li> </ol> </nav> <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.stride-social.com/"},{"@type":"ListItem","position":2,"name":"Stride Talent","item":"https://www.stride-social.com/talent"},{"@type":"ListItem","position":3,"name":"Stride Speakers"}]}</script>  <p class="exp-label" data-astro-cid-tcr7lfvk>Stride Speakers</p>  <h1 class="spec__title exp-title" id="spec-title" data-astro-cid-tcr7lfvk>Stride Speakers.</h1> <p class="spec__lead" data-astro-cid-tcr7lfvk>We support leading voices across industries: book one for your conference, panel or company event.</p>  <a class="exp-pill" href="/talent/enquire?interest=speakers" data-astro-cid-tcr7lfvk> Book A Speaker <svg viewBox="0 0 24 24" aria-hidden="true" data-astro-cid-tcr7lfvk><path d="M5 12h13.5M13 6.5 18.5 12 13 17.5" data-astro-cid-tcr7lfvk></path></svg> </a> <span class="ph-tag ph-tag--inline ph-tag--off" data-placeholder hidden data-astro-cid-alqkqqzj><span class="ph-tag__label" data-astro-cid-alqkqqzj>Draft copy</span>— needs sign-off</span> </div>  </section>  <div data-spec-desk data-astro-cid-tcr7lfvk>   <section class="lineup" aria-labelledby="lineup-title" data-tone="talent" data-look="deep" data-speaker-lineup data-ids="oli-christie tpainterx rothna-akthar jackdurkin2" data-profile="/talent?creator=" data-astro-cid-7ktb6rhc> <div class="lineup__inner" data-astro-cid-7ktb6rhc> <div class="lineup__side" data-astro-cid-7ktb6rhc> <p class="exp-label" data-astro-cid-7ktb6rhc>The speakers</p> <h2 class="lineup__title exp-title" id="lineup-title" data-astro-cid-7ktb6rhc>Who you can book.</h2> <ol class="lineup__names" role="list" data-astro-cid-7ktb6rhc> <li data-astro-cid-7ktb6rhc> <button class="lineup__name is-on" type="button" data-lineup-name="0" data-astro-cid-7ktb6rhc> <span class="lineup__no exp-label" aria-hidden="true" data-astro-cid-7ktb6rhc>01</span> Oli Christie </button> </li><li data-astro-cid-7ktb6rhc> <button class="lineup__name" type="button" data-lineup-name="1" data-astro-cid-7ktb6rhc> <span class="lineup__no exp-label" aria-hidden="true" data-astro-cid-7ktb6rhc>02</span> Tom Painter </button> </li><li data-astro-cid-7ktb6rhc> <button class="lineup__name" type="button" data-lineup-name="2" data-astro-cid-7ktb6rhc> <span class="lineup__no exp-label" aria-hidden="true" data-astro-cid-7ktb6rhc>03</span> Rothna Akhtar </button> </li><li data-astro-cid-7ktb6rhc> <button class="lineup__name" type="button" data-lineup-name="3" data-astro-cid-7ktb6rhc> <span class="lineup__no exp-label" aria-hidden="true" data-astro-cid-7ktb6rhc>04</span> Jack Durkin </button> </li> </ol> </div> <div class="lineup__monitor" data-press data-lineup-monitor data-astro-cid-7ktb6rhc> <img srcset="/_img/480/assets/roster/oli-christie.webp 480w, /_img/800/assets/roster/oli-christie.webp 800w" class="is-on" src="/assets/roster/oli-christie.jpg" alt="" sizes="(min-width: 1024px) 40vw, 100vw" decoding="async" draggable="false" data-lineup-img="0" data-astro-cid-7ktb6rhc><img src="https://content.usefoam.com/creator-off-platforms-profiles/74f12aab-24c0-488b-ae4e-a8663c844406_732609906_18611884000041023_3383432871729273127_n.jpg" alt="" sizes="(min-width: 1024px) 40vw, 100vw" decoding="async" draggable="false" data-lineup-img="1" data-astro-cid-7ktb6rhc><img src="https://content.usefoam.com/creator-off-platforms-profiles/89e6b9b1-0db5-4125-8ea8-3480a8c1c1ea_619722960_18440349313110688_2480182584355346954_n.jpg" alt="" sizes="(min-width: 1024px) 40vw, 100vw" decoding="async" draggable="false" data-lineup-img="2" data-astro-cid-7ktb6rhc><img srcset="/_img/480/assets/roster/jackdurkin2.webp 480w, /_img/800/assets/roster/jackdurkin2.webp 800w" src="/assets/roster/jackdurkin2.jpg" alt="" sizes="(min-width: 1024px) 40vw, 100vw" decoding="async" draggable="false" data-lineup-img="3" data-astro-cid-7ktb6rhc> <span class="lineup__frame" aria-hidden="true" data-astro-cid-7ktb6rhc><i data-astro-cid-7ktb6rhc></i><i data-astro-cid-7ktb6rhc></i><i data-astro-cid-7ktb6rhc></i><i data-astro-cid-7ktb6rhc></i></span> <span class="lineup__live exp-label" aria-hidden="true" data-astro-cid-7ktb6rhc><span data-astro-cid-7ktb6rhc></span>Live</span> <span class="lineup__cut" aria-hidden="true" data-lineup-cut data-astro-cid-7ktb6rhc></span> <div class="lineup__caption" aria-live="polite" data-astro-cid-7ktb6rhc> <b data-lineup-cap-name data-astro-cid-7ktb6rhc>Oli Christie</b> <span class="lineup__note" data-lineup-cap-note data-astro-cid-7ktb6rhc></span> <span data-lineup-cap-what data-astro-cid-7ktb6rhc>Executive coach, Business consultant · @olichristiecoach</span> <em class="exp-label" data-lineup-cap-act data-shoot="Click to get to know" data-astro-cid-7ktb6rhc>Click to get to know</em> </div> <script type="application/json" data-lineup-data>[{"name":"Oli Christie","note":"","what":"Executive coach, Business consultant · @olichristiecoach","src":"/assets/roster/oli-christie.jpg"},{"name":"Tom Painter","note":"","what":"Football · @tpainterx","src":"https://content.usefoam.com/creator-off-platforms-profiles/74f12aab-24c0-488b-ae4e-a8663c844406_732609906_18611884000041023_3383432871729273127_n.jpg"},{"name":"Rothna Akhtar","note":"Former candidate on BBC's The Apprentice","what":"Food, Entertainment, Fashion · @rothna.a","src":"https://content.usefoam.com/creator-off-platforms-profiles/89e6b9b1-0db5-4125-8ea8-3480a8c1c1ea_619722960_18440349313110688_2480182584355346954_n.jpg"},{"name":"Jack Durkin","note":"","what":"Football · @jackdurkin2","src":"/assets/roster/jackdurkin2.jpg"}]</script> </div> </div> </section> <section class="slides" aria-labelledby="slides-title" data-tone="talent" data-look="deep" data-speaker-slides data-astro-cid-7ktb6rhc> <div class="slides__inner" data-astro-cid-7ktb6rhc> <header class="slides__head" data-astro-cid-7ktb6rhc> <p class="exp-label" data-astro-cid-7ktb6rhc>Speaking engagements</p> <h2 class="slides__title exp-title" id="slides-title" data-astro-cid-7ktb6rhc>Where they&#39;ve spoken.</h2> <p class="slides__hint" data-astro-cid-7ktb6rhc>Click the screen or use the arrow keys for the next one.</p> </header> <div class="slides__screen" data-own-cursor data-slides-screen data-astro-cid-7ktb6rhc> <ol class="slides__deck" role="list" data-astro-cid-7ktb6rhc> <li class="slides__slide is-on" data-slide="0" data-astro-cid-7ktb6rhc> <img srcset="/_img/480/assets/site/stride-speakers-oli-christie-summit.webp 480w, /_img/800/assets/site/stride-speakers-oli-christie-summit.webp 800w, /_img/1200/assets/site/stride-speakers-oli-christie-summit.webp 1200w, /_img/1600/assets/site/stride-speakers-oli-christie-summit.webp 1600w" src="/assets/site/stride-speakers-oli-christie-summit.jpg" alt="Oli Christie speaking on stage at Global Marketing Summit 2026" decoding="async" sizes="(min-width: 1024px) 80vw, 100vw" style="object-position: 36% 30%" draggable="false" data-astro-cid-7ktb6rhc> <div class="slides__caption" data-astro-cid-7ktb6rhc> <a class="slides__who exp-label" href="/talent?creator=oli-christie" data-astro-cid-7ktb6rhc>Oli Christie</a> <h3 class="slides__what" data-astro-cid-7ktb6rhc>Global Marketing Summit 2026</h3> <p class="slides__when" data-astro-cid-7ktb6rhc>The welcome speech, October 2026.</p> <a class="slides__post" href="https://www.instagram.com/p/Ded3g-piscl/" target="_blank" rel="noopener" data-astro-cid-7ktb6rhc> See the post <svg viewBox="0 0 24 24" aria-hidden="true" data-astro-cid-7ktb6rhc><path d="M7 17 17 7M9 7h8v8" data-astro-cid-7ktb6rhc></path></svg> <span class="visually-hidden" data-astro-cid-7ktb6rhc>: on Instagram, in a new tab</span> </a> </div> </li><li class="slides__slide" data-slide="1" aria-hidden="true" data-astro-cid-7ktb6rhc> <img srcset="/_img/480/assets/site/stride-speakers-jack-durkin-game-show.webp 480w, /_img/720/assets/site/stride-speakers-jack-durkin-game-show.webp 720w" src="/assets/site/stride-speakers-jack-durkin-game-show.jpg" alt="Jack Durkin and two other guests behind the desk on the set of Call Yourself a Fan?" loading="lazy" decoding="async" sizes="(min-width: 1024px) 80vw, 100vw" draggable="false" data-astro-cid-7ktb6rhc> <div class="slides__caption" data-astro-cid-7ktb6rhc> <a class="slides__who exp-label" href="/talent?creator=jackdurkin2" data-astro-cid-7ktb6rhc>Jack Durkin</a> <h3 class="slides__what" data-astro-cid-7ktb6rhc>Call Yourself a Fan?</h3> <p class="slides__when" data-astro-cid-7ktb6rhc>A guest on the football game show, October 2025.</p> <a class="slides__post" href="https://www.instagram.com/p/DQMmjpiCJfo/" target="_blank" rel="noopener" data-astro-cid-7ktb6rhc> See the post <svg viewBox="0 0 24 24" aria-hidden="true" data-astro-cid-7ktb6rhc><path d="M7 17 17 7M9 7h8v8" data-astro-cid-7ktb6rhc></path></svg> <span class="visually-hidden" data-astro-cid-7ktb6rhc>: on Instagram, in a new tab</span> </a> </div> </li><li class="slides__slide" data-slide="2" aria-hidden="true" data-astro-cid-7ktb6rhc> <img srcset="/_img/480/assets/site/stride-speakers-jack-durkin-20vs1.webp 480w, /_img/800/assets/site/stride-speakers-jack-durkin-20vs1.webp 800w, /_img/1200/assets/site/stride-speakers-jack-durkin-20vs1.webp 1200w" src="/assets/site/stride-speakers-jack-durkin-20vs1.jpg" alt="Jack Durkin at the debate table across from Michael Owen, the other guests seated behind them" loading="lazy" decoding="async" sizes="(min-width: 1024px) 80vw, 100vw" draggable="false" data-astro-cid-7ktb6rhc> <div class="slides__caption" data-astro-cid-7ktb6rhc> <a class="slides__who exp-label" href="/talent?creator=jackdurkin2" data-astro-cid-7ktb6rhc>Jack Durkin</a> <h3 class="slides__what" data-astro-cid-7ktb6rhc>20vs1 with Michael Owen</h3> <p class="slides__when" data-astro-cid-7ktb6rhc>In the debate, October 2026.</p> <a class="slides__post" href="https://www.instagram.com/p/De2GFDAiCB2/" target="_blank" rel="noopener" data-astro-cid-7ktb6rhc> See the post <svg viewBox="0 0 24 24" aria-hidden="true" data-astro-cid-7ktb6rhc><path d="M7 17 17 7M9 7h8v8" data-astro-cid-7ktb6rhc></path></svg> <span class="visually-hidden" data-astro-cid-7ktb6rhc>: on Instagram, in a new tab</span> </a> </div> </li><li class="slides__slide" data-slide="3" aria-hidden="true" data-astro-cid-7ktb6rhc> <img srcset="/_img/480/assets/site/stride-speakers-tom-painter-20vs1.webp 480w, /_img/800/assets/site/stride-speakers-tom-painter-20vs1.webp 800w, /_img/1200/assets/site/stride-speakers-tom-painter-20vs1.webp 1200w" src="/assets/site/stride-speakers-tom-painter-20vs1.jpg" alt="Tom Painter at a microphone during the 20vs1 debate" loading="lazy" decoding="async" sizes="(min-width: 1024px) 80vw, 100vw" draggable="false" data-astro-cid-7ktb6rhc> <div class="slides__caption" data-astro-cid-7ktb6rhc> <a class="slides__who exp-label" href="/talent?creator=tpainterx" data-astro-cid-7ktb6rhc>Tom Painter</a> <h3 class="slides__what" data-astro-cid-7ktb6rhc>20vs1 with Michael Owen</h3> <p class="slides__when" data-astro-cid-7ktb6rhc>In the debate, October 2026.</p> <a class="slides__post" href="https://www.instagram.com/p/De2DViUjQ8l/" target="_blank" rel="noopener" data-astro-cid-7ktb6rhc> See the post <svg viewBox="0 0 24 24" aria-hidden="true" data-astro-cid-7ktb6rhc><path d="M7 17 17 7M9 7h8v8" data-astro-cid-7ktb6rhc></path></svg> <span class="visually-hidden" data-astro-cid-7ktb6rhc>: on Instagram, in a new tab</span> </a> </div> </li> </ol> <span class="slides__edge slides__edge--prev" aria-hidden="true" data-astro-cid-7ktb6rhc></span> <span class="slides__edge slides__edge--next" aria-hidden="true" data-astro-cid-7ktb6rhc></span> <p class="slides__count exp-label" aria-live="polite" data-astro-cid-7ktb6rhc><span class="slides__at" data-most="4" data-astro-cid-7ktb6rhc><span data-slides-at data-astro-cid-7ktb6rhc>1</span></span> / 4</p> <span class="slides__laser" aria-hidden="true" data-slides-laser data-astro-cid-7ktb6rhc></span> <canvas class="slides__trail" aria-hidden="true" data-slides-trail data-astro-cid-7ktb6rhc></canvas> </div> <div class="slides__strip" role="group" aria-label="Where they've spoken." data-astro-cid-7ktb6rhc> <button class="slides__step" type="button" aria-label="Previous" data-slides-prev data-astro-cid-7ktb6rhc> <svg viewBox="0 0 24 24" aria-hidden="true" data-astro-cid-7ktb6rhc><path d="M19 12H5.5M11 6.5 5.5 12l5.5 5.5" data-astro-cid-7ktb6rhc></path></svg> </button> <button class="slides__thumb is-on" type="button" aria-label="Global Marketing Summit 2026, Oli Christie" aria-pressed="true" data-slides-go="0" data-astro-cid-7ktb6rhc> <img srcset="/_img/480/assets/site/stride-speakers-oli-christie-summit.webp 480w, /_img/800/assets/site/stride-speakers-oli-christie-summit.webp 800w, /_img/1200/assets/site/stride-speakers-oli-christie-summit.webp 1200w, /_img/1600/assets/site/stride-speakers-oli-christie-summit.webp 1600w" src="/assets/site/stride-speakers-oli-christie-summit.jpg" alt="" loading="lazy" decoding="async" sizes="(min-width: 1921px) 8.4vw, 160px" style="object-position: 36% 30%" draggable="false" data-astro-cid-7ktb6rhc> </button><button class="slides__thumb" type="button" aria-label="Call Yourself a Fan?, Jack Durkin" aria-pressed="false" data-slides-go="1" data-astro-cid-7ktb6rhc> <img srcset="/_img/480/assets/site/stride-speakers-jack-durkin-game-show.webp 480w, /_img/720/assets/site/stride-speakers-jack-durkin-game-show.webp 720w" src="/assets/site/stride-speakers-jack-durkin-game-show.jpg" alt="" loading="lazy" decoding="async" sizes="(min-width: 1921px) 8.4vw, 160px" draggable="false" data-astro-cid-7ktb6rhc> </button><button class="slides__thumb" type="button" aria-label="20vs1 with Michael Owen, Jack Durkin" aria-pressed="false" data-slides-go="2" data-astro-cid-7ktb6rhc> <img srcset="/_img/480/assets/site/stride-speakers-jack-durkin-20vs1.webp 480w, /_img/800/assets/site/stride-speakers-jack-durkin-20vs1.webp 800w, /_img/1200/assets/site/stride-speakers-jack-durkin-20vs1.webp 1200w" src="/assets/site/stride-speakers-jack-durkin-20vs1.jpg" alt="" loading="lazy" decoding="async" sizes="(min-width: 1921px) 8.4vw, 160px" draggable="false" data-astro-cid-7ktb6rhc> </button><button class="slides__thumb" type="button" aria-label="20vs1 with Michael Owen, Tom Painter" aria-pressed="false" data-slides-go="3" data-astro-cid-7ktb6rhc> <img srcset="/_img/480/assets/site/stride-speakers-tom-painter-20vs1.webp 480w, /_img/800/assets/site/stride-speakers-tom-painter-20vs1.webp 800w, /_img/1200/assets/site/stride-speakers-tom-painter-20vs1.webp 1200w" src="/assets/site/stride-speakers-tom-painter-20vs1.jpg" alt="" loading="lazy" decoding="async" sizes="(min-width: 1921px) 8.4vw, 160px" draggable="false" data-astro-cid-7ktb6rhc> </button> <button class="slides__step" type="button" aria-label="Next" data-slides-next data-astro-cid-7ktb6rhc> <svg viewBox="0 0 24 24" aria-hidden="true" data-astro-cid-7ktb6rhc><path d="M5 12h13.5M13 6.5 18.5 12 13 17.5" data-astro-cid-7ktb6rhc></path></svg> </button> </div> </div> </section>  <script type="module" src="/_astro/SpeakerStage.astro_astro_type_script_index_0_lang.DH52gPL-.js"></script> </div>     <section class="spec spec--close" aria-labelledby="spec-close" data-tone="talent" data-look="deep" data-astro-cid-tcr7lfvk> <div class="spec__inner" data-astro-cid-tcr7lfvk> <h2 class="spec__title exp-title" id="spec-close" data-astro-cid-tcr7lfvk>Planning an event?</h2> <p class="spec__lead" data-astro-cid-tcr7lfvk>Send us the date, the audience and the topic.</p> <a class="exp-pill" href="/talent/enquire?interest=speakers" data-astro-cid-tcr7lfvk> Book A Speaker <svg viewBox="0 0 24 24" aria-hidden="true" data-astro-cid-tcr7lfvk><path d="M5 12h13.5M13 6.5 18.5 12 13 17.5" data-astro-cid-tcr7lfvk></path></svg> </a> </div> </section>   <div class="csheet" role="dialog" aria-modal="true" aria-labelledby="csheet-name" hidden data-csheet data-lenis-prevent data-astro-cid-dlkqzi4i> <script type="application/json" data-csheet-data>[{"id":"oli-christie","name":"Oli Christie","src":"/assets/roster/oli-christie.jpg","tag":"Signed","handle":"@olichristiecoach","details":"Executive coach, Business consultant","line":null,"figure":null,"platforms":[{"label":"Instagram","href":"https://www.instagram.com/olichristiecoach/"}],"enquire":"/talent/enquire?creator=oli-christie","href":"/talent?creator=oli-christie","video":null},{"id":"tpainterx","name":"Tom Painter","src":"https://content.usefoam.com/creator-off-platforms-profiles/74f12aab-24c0-488b-ae4e-a8663c844406_732609906_18611884000041023_3383432871729273127_n.jpg","tag":"Signed","handle":"@tpainterx","details":"Football · United Kingdom","line":"Tom Painter is a vibrant creator passionate about football and sports entertainment.","figure":null,"platforms":[{"label":"TikTok","href":"https://www.tiktok.com/@tpainterx"},{"label":"Instagram","href":"https://www.instagram.com/tpainterx/"}],"enquire":"/talent/enquire?creator=tpainterx","href":"/talent?creator=tpainterx","video":null},{"id":"rothna-akthar","name":"Rothna Akhtar","src":"https://content.usefoam.com/creator-off-platforms-profiles/89e6b9b1-0db5-4125-8ea8-3480a8c1c1ea_619722960_18440349313110688_2480182584355346954_n.jpg","tag":"Signed","handle":"@rothna.a","details":"Food, Entertainment, Fashion · United Kingdom","line":"Rothna Akhtar is a dynamic creator and former candidate on BBC's The Apprentice, known for her engaging content that blends fashion, personal stories, and cultural insights.","figure":null,"platforms":[{"label":"Instagram","href":"https://www.instagram.com/rothna.a/"}],"enquire":"/talent/enquire?creator=rothna-akthar","href":"/talent?creator=rothna-akthar","video":null},{"id":"jackdurkin2","name":"Jack Durkin","src":"/assets/roster/jackdurkin2.jpg","tag":"Signed","handle":"@jackdurkin2","details":"Football · United Kingdom","line":null,"figure":null,"platforms":[{"label":"TikTok","href":"https://www.tiktok.com/@jackdurkin2"},{"label":"Instagram","href":"https://www.instagram.com/jackdurkss/"}],"enquire":"/talent/enquire?creator=jackdurkin2","href":"/talent?creator=jackdurkin2","video":null}]</script> <div class="csheet__veil" data-csheet-close data-astro-cid-dlkqzi4i></div> <button class="csheet__edge csheet__edge--prev" type="button" aria-label="The creator before" data-csheet-prev data-astro-cid-dlkqzi4i> <img alt="" decoding="async" draggable="false" data-astro-cid-dlkqzi4i> </button> <button class="csheet__edge csheet__edge--next" type="button" aria-label="The creator after" data-csheet-next data-astro-cid-dlkqzi4i> <img alt="" decoding="async" draggable="false" data-astro-cid-dlkqzi4i> </button> <div class="csheet__body" data-astro-cid-dlkqzi4i> <div class="csheet__hand" data-csheet-hand data-astro-cid-dlkqzi4i> <figure class="csheet__print" data-csheet-print data-astro-cid-dlkqzi4i> <span class="csheet__paper" aria-hidden="true" data-csheet-paper data-astro-cid-dlkqzi4i></span> <span class="csheet__photo" data-csheet-photo data-astro-cid-dlkqzi4i> <img alt="" decoding="async" draggable="false" data-csheet-img data-astro-cid-dlkqzi4i> <video muted loop playsinline preload="none" hidden data-csheet-video data-astro-cid-dlkqzi4i></video> <span class="csheet__gloss" aria-hidden="true" data-csheet-gloss data-astro-cid-dlkqzi4i></span> </span> <figcaption data-csheet-caption data-astro-cid-dlkqzi4i></figcaption> </figure> </div> <div class="csheet__text" data-csheet-text data-astro-cid-dlkqzi4i> <p class="csheet__top" data-astro-cid-dlkqzi4i><span class="csheet__tag exp-label" data-csheet-tag data-astro-cid-dlkqzi4i></span><span class="csheet__count exp-label" data-csheet-count data-astro-cid-dlkqzi4i></span></p> <h2 class="csheet__name" id="csheet-name" data-csheet-name data-astro-cid-dlkqzi4i></h2> <p class="csheet__handle" data-csheet-handle data-astro-cid-dlkqzi4i></p> <p class="csheet__details exp-label" data-csheet-details data-astro-cid-dlkqzi4i></p> <p class="csheet__line" data-csheet-line data-astro-cid-dlkqzi4i></p> <p class="csheet__figure" data-csheet-figure data-astro-cid-dlkqzi4i></p> <ul class="csheet__platforms" role="list" data-csheet-platforms data-astro-cid-dlkqzi4i></ul> <div class="csheet__actions" data-astro-cid-dlkqzi4i> <a class="exp-pill" href="/talent/enquire" data-csheet-enquire data-astro-cid-dlkqzi4i> <span data-csheet-enquire-label data-astro-cid-dlkqzi4i>Enquire about</span> <svg viewBox="0 0 24 24" aria-hidden="true" data-astro-cid-dlkqzi4i><path d="M5 12h13.5M13 6.5 18.5 12 13 17.5" data-astro-cid-dlkqzi4i></path></svg> </a> <a class="csheet__more" href="/talent" data-csheet-profile data-astro-cid-dlkqzi4i> Full profile <svg viewBox="0 0 24 24" aria-hidden="true" data-astro-cid-dlkqzi4i><path d="M5 12h13.5M13 6.5 18.5 12 13 17.5" data-astro-cid-dlkqzi4i></path></svg> </a> </div> </div> </div> <button class="csheet__close" type="button" aria-label="Close" data-csheet-close data-astro-cid-dlkqzi4i> <svg viewBox="0 0 24 24" aria-hidden="true" data-astro-cid-dlkqzi4i><path d="M6 6l12 12M18 6 6 18" data-astro-cid-dlkqzi4i></path></svg> </button> </div>  <script type="module" src="/_astro/CreatorSheet.astro_astro_type_script_index_0_lang.Dxx5elHK.js"></script> <div class="exp-haze spec-reel" aria-hidden="true" data-page="speakers" data-astro-cid-tcr7lfvk> <video muted playsinline preload="none" poster="/assets/site/stride-speakers-poster.jpg" tabindex="-1" data-spec-reel data-from="0" data-to="0" style="--shift: 0%; --ay: 40%; --fy: 38%" data-astro-cid-tcr7lfvk> <source src="/assets/video/stride-speakers-studio.mp4" type="video/mp4" data-astro-cid-tcr7lfvk> </video> <span class="spec-reel__deep" data-astro-cid-tcr7lfvk></span>  </div>  <script type="module" src="/_astro/SpecialistPage.astro_astro_type_script_index_0_lang.f_y6sBLs.js"></script>  </main> <footer class="footer" data-look="deep" data-footer data-astro-cid-fyrrssvj> <div class="footer__inner" data-astro-cid-fyrrssvj> <div class="footer__brand" data-astro-cid-fyrrssvj> <a href="/" aria-label="Stride home" data-astro-cid-fyrrssvj><span class="logo logo--on-dark" data-astro-cid-b5hwsl7a> <span class="logo__lockup" aria-hidden="true" data-astro-cid-b5hwsl7a></span> <svg class="logo__mark" viewBox="0 0 106 106" aria-hidden="true" data-astro-cid-b5hwsl7a> <path d="M53 53H0L53 0v53Z" fill="currentColor" data-astro-cid-b5hwsl7a></path> <path d="M53 106H0l53-53v53Z" fill="currentColor" data-astro-cid-b5hwsl7a></path> <path d="M106 53H53l53-53v53Z" fill="currentColor" data-astro-cid-b5hwsl7a></path> <path d="M106 106H53l53-53v53Z" fill="currentColor" data-astro-cid-b5hwsl7a></path> </svg> <span class="logo__word" data-astro-cid-b5hwsl7a>Stride</span>  </span> </a> </div> <nav class="footer__cols" aria-label="Footer" data-astro-cid-fyrrssvj> <div class="footer__col" style="--c: 0" data-astro-cid-fyrrssvj> <p class="footer__title" data-astro-cid-fyrrssvj>Group</p> <ul role="list" data-astro-cid-fyrrssvj> <li style="--r: 0" data-astro-cid-fyrrssvj><a href="/about" data-astro-cid-fyrrssvj>About</a></li><li style="--r: 1" data-astro-cid-fyrrssvj><a href="/sponsorships" data-astro-cid-fyrrssvj>Sponsorships</a></li><li style="--r: 2" data-astro-cid-fyrrssvj><a href="/careers" data-astro-cid-fyrrssvj>Careers</a></li><li style="--r: 3" data-astro-cid-fyrrssvj><a href="/insights" data-astro-cid-fyrrssvj>Insights</a></li> </ul> </div><div class="footer__col" style="--c: 1" data-astro-cid-fyrrssvj> <p class="footer__title" data-astro-cid-fyrrssvj>Stride Social</p> <ul role="list" data-astro-cid-fyrrssvj> <li style="--r: 0" data-astro-cid-fyrrssvj><a href="/social" data-astro-cid-fyrrssvj>Services</a></li><li style="--r: 1" data-astro-cid-fyrrssvj><a href="/work" data-astro-cid-fyrrssvj>Our Work</a></li><li style="--r: 2" data-astro-cid-fyrrssvj><a href="/social/enquire" data-astro-cid-fyrrssvj>Start a campaign</a></li> </ul> </div><div class="footer__col" style="--c: 2" data-astro-cid-fyrrssvj> <p class="footer__title" data-astro-cid-fyrrssvj>Stride Talent</p> <ul role="list" data-astro-cid-fyrrssvj> <li style="--r: 0" data-astro-cid-fyrrssvj><a href="/talent" data-astro-cid-fyrrssvj>Overview</a></li><li style="--r: 1" data-astro-cid-fyrrssvj><a href="/talent/apply" data-astro-cid-fyrrssvj>Apply</a></li> </ul> </div><div class="footer__col" style="--c: 3" data-astro-cid-fyrrssvj> <p class="footer__title" data-astro-cid-fyrrssvj>Stride Academy</p> <ul role="list" data-astro-cid-fyrrssvj> <li style="--r: 0" data-astro-cid-fyrrssvj><a href="/academy" data-astro-cid-fyrrssvj>Overview</a></li> </ul> </div> <div class="footer__col" style="--c: 4" data-astro-cid-fyrrssvj> <p class="footer__title" data-astro-cid-fyrrssvj>Contact</p> <ul role="list" data-astro-cid-fyrrssvj> <li style="--r: 0" data-astro-cid-fyrrssvj><a href="/social/enquire" data-astro-cid-fyrrssvj>Brand enquiries</a></li><li style="--r: 1" data-astro-cid-fyrrssvj><a href="/talent/apply" data-astro-cid-fyrrssvj>Creator applications</a></li><li style="--r: 2" data-astro-cid-fyrrssvj><a href="/academy" data-astro-cid-fyrrssvj>Academy</a></li><li style="--r: 3" data-astro-cid-fyrrssvj><a href="/contact" data-astro-cid-fyrrssvj>General enquiries</a></li> </ul> <ul class="footer__social" role="list" data-astro-cid-fyrrssvj> <li style="--r: 4" data-astro-cid-fyrrssvj><a href="https://www.instagram.com/stridetalent/" target="_blank" rel="noopener" data-astro-cid-fyrrssvj>Instagram</a></li><li style="--r: 5" data-astro-cid-fyrrssvj><a href="https://www.linkedin.com/company/stridesocialagency/" target="_blank" rel="noopener" data-astro-cid-fyrrssvj>LinkedIn</a></li><li style="--r: 6" data-astro-cid-fyrrssvj><a href="https://www.tiktok.com/@stridesocial" target="_blank" rel="noopener" data-astro-cid-fyrrssvj>TikTok</a></li> </ul> </div> </nav> <div class="footer__base" data-astro-cid-fyrrssvj> <p data-astro-cid-fyrrssvj>© 2026 Stride Global Holdings Pte. Ltd · 202527987G</p> <ul class="footer__legal" role="list" data-astro-cid-fyrrssvj> <li data-astro-cid-fyrrssvj><a href="/privacy" data-astro-cid-fyrrssvj>Privacy</a></li><li data-astro-cid-fyrrssvj><a href="/cookies" data-astro-cid-fyrrssvj>Cookies</a></li><li data-astro-cid-fyrrssvj><a href="/terms" data-astro-cid-fyrrssvj>Terms</a></li>  </ul> </div> </div> </footer>  <script type="module">const e=document.querySelector("[data-footer]"),t=e?.querySelector(".footer__inner");if(e&&t&&window.matchMedia("(prefers-reduced-motion: no-preference)").matches&&!e.classList.contains("footer--no-desk")&&t.getBoundingClientRect().top>=window.innerHeight){e.classList.add("is-armed");const n=new IntersectionObserver(i=>{i.some(o=>o.isIntersecting&&o.intersectionRatio>=.24)&&(n.disconnect(),e.classList.add("is-in"))},{threshold:.25});n.observe(t)}</script> <script type="module">const i=e=>{try{const t=JSON.parse(localStorage.getItem(e)??"null");return t?.choice==="accept"||t?.choice==="reject"?t.choice:null}catch{return null}},l=(e,t)=>{try{localStorage.setItem(e,JSON.stringify({choice:t,date:new Date().toISOString()}))}catch{}};let c=!1;function g(e){if(c)return;c=!0,window.dataLayer=window.dataLayer||[],window.gtag=function(){window.dataLayer.push(arguments)},window.gtag("consent","default",{ad_storage:"denied",ad_user_data:"denied",ad_personalization:"denied",analytics_storage:"denied"}),window.gtag("consent","update",{analytics_storage:"granted"}),window.gtag("js",new Date),window.gtag("config",e,{anonymize_ip:!0});const t=document.createElement("script");t.async=!0,t.src=`https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(e)}`,document.head.append(t)}function u(){const e=document.querySelector("[data-consent]");if(!e||e.dataset.ready)return;e.dataset.ready="true";const t=e.dataset.key,o=e.dataset.ga4??"",d=a=>{a==="accept"&&o&&g(o)},s=()=>{e.hidden=!1,e.querySelector('[data-consent-choice="reject"]')?.focus()},r=i(t);r?d(r):e.hidden=!1,e.addEventListener("click",a=>{const n=a.target.closest("[data-consent-choice]")?.dataset.consentChoice;n&&(l(t,n),e.hidden=!0,d(n),n==="reject"&&c&&location.reload())}),document.querySelectorAll("[data-consent-open]").forEach(a=>a.addEventListener("click",s))}u();</script> <script type="module" src="/_astro/SiteLayout.astro_astro_type_script_index_0_lang.D17JUeMR.js"></script> </body> </html> 

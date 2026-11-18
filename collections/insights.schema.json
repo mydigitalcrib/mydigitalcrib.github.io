@@ -1,0 +1,194 @@
+{
+  "$ref": "#/definitions/insights",
+  "definitions": {
+    "insights": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "category": {
+          "type": "string",
+          "enum": [
+            "company-news",
+            "creator-economy",
+            "marketing-insights",
+            "education"
+          ]
+        },
+        "categoryStatus": {
+          "type": "string",
+          "enum": [
+            "proposed",
+            "approved"
+          ]
+        },
+        "date": {
+          "anyOf": [
+            {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "date-time"
+                },
+                {
+                  "type": "string",
+                  "format": "date"
+                },
+                {
+                  "type": "integer",
+                  "format": "unix-time"
+                }
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "author": {
+          "anyOf": [
+            {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "collection": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "collection"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "slug": {
+                      "type": "string"
+                    },
+                    "collection": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "slug",
+                    "collection"
+                  ],
+                  "additionalProperties": false
+                }
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "authorName": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "standfirst": {
+          "type": "string"
+        },
+        "cover": {
+          "type": "object",
+          "properties": {
+            "src": {
+              "type": "string"
+            },
+            "alt": {
+              "type": "string",
+              "minLength": 1,
+              "errorMessage": {
+                "minLength": "Alt text is required"
+              }
+            }
+          },
+          "required": [
+            "src",
+            "alt"
+          ],
+          "additionalProperties": false
+        },
+        "aside": {
+          "anyOf": [
+            {
+              "$ref": "#/definitions/insights/properties/cover"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "cardTitle": {
+          "type": "string"
+        },
+        "listDate": {
+          "type": "string"
+        },
+        "featured": {
+          "type": "boolean",
+          "default": false
+        },
+        "order": {
+          "type": "number"
+        },
+        "visible": {
+          "type": "boolean",
+          "default": true
+        },
+        "seo": {
+          "type": "object",
+          "properties": {
+            "title": {
+              "type": "string"
+            },
+            "description": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "title",
+            "description"
+          ],
+          "additionalProperties": false
+        },
+        "locale": {
+          "type": "string",
+          "default": "en"
+        },
+        "$schema": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "title",
+        "category",
+        "categoryStatus",
+        "date",
+        "author",
+        "authorName",
+        "standfirst",
+        "cover",
+        "aside",
+        "order"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}
