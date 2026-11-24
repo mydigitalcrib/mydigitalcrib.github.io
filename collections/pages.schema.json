@@ -98,6 +98,26 @@
                   "type": "string"
                 }
               },
+              "image": {
+                "type": "object",
+                "properties": {
+                  "src": {
+                    "$ref": "#/definitions/pages/properties/sections/additionalProperties/properties/items/items/properties/image"
+                  },
+                  "alt": {
+                    "type": "string",
+                    "minLength": 1,
+                    "errorMessage": {
+                      "minLength": "Alt text is required"
+                    }
+                  }
+                },
+                "required": [
+                  "src",
+                  "alt"
+                ],
+                "additionalProperties": false
+              },
               "images": {
                 "type": "array",
                 "items": {
@@ -107,11 +127,7 @@
                       "$ref": "#/definitions/pages/properties/sections/additionalProperties/properties/items/items/properties/image"
                     },
                     "alt": {
-                      "type": "string",
-                      "minLength": 1,
-                      "errorMessage": {
-                        "minLength": "Alt text is required"
-                      }
+                      "$ref": "#/definitions/pages/properties/sections/additionalProperties/properties/image/properties/alt"
                     },
                     "caption": {
                       "type": "string"

@@ -218,6 +218,10 @@
               "type": "string",
               "format": "uri"
             },
+            "linkedin": {
+              "type": "string",
+              "format": "uri"
+            },
             "website": {
               "type": "string",
               "format": "uri"
